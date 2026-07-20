@@ -115,7 +115,7 @@
 - `v-for` — [теория, списки, `:key`](docs/module-1/10-v-for.md)
 - `v-model` — [теория, two-way binding, modifiers](docs/module-1/11-v-model.md)
 - `v-on` — [теория, `@event`, modifiers](docs/module-1/12-v-on.md)
-- работа с формами на базовом уровне
+- работа с формами на базовом уровне — [теория, submit, validation, примеры](docs/module-1/13-basic-forms.md)
 
 ### Практика
 
