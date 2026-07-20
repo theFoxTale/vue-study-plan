@@ -109,7 +109,12 @@
 - секции `<template>`, `<script setup>`, `<style>` — [теория по каждой секции SFC](docs/module-1/04-sfc-sections-template-script-style.md)
 - интерполяция — [теория, mustache `{{ }}`, expressions, ссылки](docs/module-1/05-interpolation.md)
 - события — [теория, `@click`, modifiers, forms, ссылки](docs/module-1/06-events.md)
-- директивы: `v-bind`, `v-if`, `v-show`, `v-for`, `v-model`, `v-on`
+- `v-bind` — [теория, `:attr`, props, class binding](docs/module-1/07-v-bind.md)
+- `v-if` — [теория, условный рендеринг, `v-else`](docs/module-1/08-v-if.md)
+- `v-show` — [теория, show/hide через CSS](docs/module-1/09-v-show.md)
+- `v-for` — [теория, списки, `:key`](docs/module-1/10-v-for.md)
+- `v-model` — [теория, two-way binding, modifiers](docs/module-1/11-v-model.md)
+- `v-on` — [теория, `@event`, modifiers](docs/module-1/12-v-on.md)
 - работа с формами на базовом уровне
 
 ### Практика
