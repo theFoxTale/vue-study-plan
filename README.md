@@ -70,7 +70,7 @@
 
 ### Теория
 
-- роль `Vue` в современном frontend
+- роль `Vue` в современном frontend — [теория, ссылки и видео](docs/module-0/01-vue-role-in-modern-frontend.md)
 - отличие `Vue` от `React` и `Angular`
 - `Node.js`, `npm`, `pnpm`
 - установка `Vue Devtools`
