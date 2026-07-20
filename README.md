@@ -184,7 +184,7 @@
 - named slots — [теория, `#header`/`#footer`, `$slots`, card/modal layout, ссылки](docs/module-3/04-named-slots.md)
 - scoped slots — [теория, slot props, flexible lists/tables, vs composables, ссылки](docs/module-3/05-scoped-slots.md)
 - локальная и глобальная регистрация компонентов — [теория, local import vs `app.component`, tree-shaking, ссылки](docs/module-3/06-component-registration.md)
-- контейнерные и презентационные компоненты
+- контейнерные и презентационные компоненты — [теория, smart/dumb, composables, catalog architecture, ссылки](docs/module-3/07-container-presentational.md)
 - принципы декомпозиции UI
 - базовая доступность: семантика, `label`, `button`, focus states
 
