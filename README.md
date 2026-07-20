@@ -661,49 +661,157 @@
 
 Ниже собраны идеи, которые удобно брать в зависимости от текущего этапа. Лучше выбрать 1-2 проекта и постепенно усложнять их, чем начинать много разных и не доводить до конца.
 
+**Уровни сложности:**
+
+- `easy` — можно закрыть за 1-3 дня, минимум зависимостей
+- `medium` — 1-2 недели, несколько страниц и слоев логики
+- `hard` — 3+ недели, много сценариев, архитектура и тесты обязательны
+
 ### Простые проекты для модулей 1-3
 
-- `Habit Tracker` - список привычек, отметка выполнения, простая статистика
-- `Notes App` - создание, редактирование и удаление заметок
-- `Movie Search UI` - поиск и отображение карточек фильмов
-- `Recipe Book` - каталог рецептов с фильтрами по категориям
-- `Pomodoro Timer` - таймер, история сессий, настройки интервалов
+#### Habit Tracker · easy
+
+- **Тренирует:** `Module 1`, `Module 2`, `Module 3`
+- **MVP:** добавить/удалить привычку, отметить выполнение за сегодня, показать простой streak
+- **Потом можно добавить:** фильтры, статистику по неделям, composables для логики
+
+#### Notes App · easy
+
+- **Тренирует:** `Module 1`, `Module 2`, `Module 3`
+- **MVP:** список заметок, создание, редактирование, удаление
+- **Потом можно добавить:** поиск, теги, модальное окно редактирования
+
+#### Movie Search UI · easy
+
+- **Тренирует:** `Module 2`, `Module 3`, базовый вход в `Module 7`
+- **MVP:** поле поиска, список карточек, состояния `loading / error / empty`
+- **Потом можно добавить:** страницу деталей, debounce, pagination
+
+#### Recipe Book · easy
+
+- **Тренирует:** `Module 1`, `Module 2`, `Module 3`
+- **MVP:** список рецептов, фильтр по категории, карточка с деталями
+- **Потом можно добавить:** форму добавления рецепта, slots для карточки
+
+#### Pomodoro Timer · easy
+
+- **Тренирует:** `Module 2`, `Module 3`, частично `Module 6`
+- **MVP:** таймер work/break, старт/пауза/сброс, отображение текущего режима
+- **Потом можно добавить:** историю сессий, настройки интервалов, store для сохранения
 
 ### Средние проекты для модулей 4-9
 
-- `Task Manager` - доска задач, фильтры, статусы, формы, router и store
-- `Expense Tracker` - категории расходов, сводка, формы, графики при желании
-- `Book Tracker` - список книг, избранное, прогресс чтения, поиск и деталка
-- `Workout Planner` - упражнения, планы тренировок, multi-step forms
-- `Admin Dashboard` - таблицы, фильтры, пагинация, авторизация, server state
+#### Task Manager · medium
+
+- **Тренирует:** `Module 4`, `Module 5`, `Module 6`, `Module 9`
+- **MVP:** список задач, статусы, фильтры, страница деталей, форма создания/редактирования
+- **Потом можно добавить:** Pinia, router guards, валидацию через `Zod`
+
+#### Expense Tracker · medium
+
+- **Тренирует:** `Module 4`, `Module 6`, `Module 9`
+- **MVP:** добавление расхода, категории, сводка за период, простая форма
+- **Потом можно добавить:** графики, фильтры по дате, typed models
+
+#### Book Tracker · medium
+
+- **Тренирует:** `Module 4`, `Module 5`, `Module 6`, `Module 7`
+- **MVP:** список книг, страница книги, избранное, поиск, загрузка из API
+- **Потом можно добавить:** прогресс чтения, фильтры, pagination
+
+#### Workout Planner · medium
+
+- **Тренирует:** `Module 5`, `Module 6`, `Module 9`
+- **MVP:** список упражнений, план на день, multi-step форма создания тренировки
+- **Потом можно добавить:** store для планов, валидацию шагов, history
+
+#### Admin Dashboard · medium
+
+- **Тренирует:** `Module 5`, `Module 7`, `Module 8`, `Module 9`
+- **MVP:** таблица сущностей, фильтры, pagination, login form, detail page
+- **Потом можно добавить:** `vue-query`, role-based routes, mutations
 
 ### Проекты для модулей 10-14
 
-- `Mini Ecommerce` - каталог, корзина, checkout, фильтры, API, формы
-- `Event Platform` - список событий, регистрация, личный кабинет, уведомления
-- `Learning Platform UI` - курсы, уроки, прогресс, role-based navigation
-- `Docs-like App on Nuxt` - документация, sidebar, search, SSG/SSR
-- `Content Blog on Nuxt` - статьи, теги, SEO, страницы контента
+#### Mini Ecommerce · hard
+
+- **Тренирует:** `Module 8`, `Module 9`, `Module 10`, `Module 11`, `Module 13`
+- **MVP:** каталог, фильтры, карточка товара, корзина, checkout form
+- **Потом можно добавить:** notifications, modal flow, tests, feature-based refactor
+
+#### Event Platform · hard
+
+- **Тренирует:** `Module 9`, `Module 10`, `Module 11`, `Module 13`
+- **MVP:** список событий, страница события, регистрация, личный кабинет с моими событиями
+- **Потом можно добавить:** toast notifications, tabs, role guards
+
+#### Learning Platform UI · hard
+
+- **Тренирует:** `Module 10`, `Module 11`, `Module 12`, `Module 13`
+- **MVP:** список курсов, страница урока, прогресс, sidebar navigation
+- **Потом можно добавить:** lazy routes, performance tuning, architecture split
+
+#### Docs-like App on Nuxt · hard
+
+- **Тренирует:** `Module 10`, `Module 13`, `Module 14`
+- **MVP:** sidebar, markdown/content pages, search, базовый layout
+- **Потом можно добавить:** SSG, server routes, SEO metadata
+
+#### Content Blog on Nuxt · medium
+
+- **Тренирует:** `Module 11`, `Module 13`, `Module 14`
+- **MVP:** список статей, страница статьи, теги, базовый SEO
+- **Потом можно добавить:** pagination, related posts, deploy
 
 ### Идеи для финального проекта
 
-- `Personal Finance Dashboard`
-- `Project Management App`
-- `Marketplace Frontend`
-- `Job Board`
-- `Travel Planner`
-- `Developer Portfolio CMS-like App`
+#### Personal Finance Dashboard · hard
+
+- **Тренирует:** `Module 5-13`
+- **MVP:** операции, категории, фильтры, summary cards, форма добавления транзакции
+- **Потом можно добавить:** charts, tests, architecture docs, deploy
+
+#### Project Management App · hard
+
+- **Тренирует:** `Module 5-13`
+- **MVP:** проекты, задачи, статусы, assignee, detail pages, create/edit forms
+- **Потом можно добавить:** comments, roles, optimistic updates, e2e smoke tests
+
+#### Marketplace Frontend · hard
+
+- **Тренирует:** `Module 5-14`
+- **MVP:** каталог, search, filters, product page, cart, checkout
+- **Потом можно добавить:** account area, wishlist, SSR catalog, full test coverage
+
+#### Job Board · hard
+
+- **Тренирует:** `Module 5-14`
+- **MVP:** список вакансий, filters, vacancy page, apply form, favorites
+- **Потом можно добавить:** SSR listing, pagination, auth, application history
+
+#### Travel Planner · medium
+
+- **Тренирует:** `Module 5-13`
+- **MVP:** маршруты, список мест, заметки к поездке, detail page
+- **Потом можно добавить:** calendar view, collections, map integration later
+
+#### Developer Portfolio CMS-like App · hard
+
+- **Тренирует:** `Module 5`, `Module 9`, `Module 10`, `Module 13`, `Module 14`
+- **MVP:** public portfolio pages, projects list, admin form для контента
+- **Потом можно добавить:** blog/articles, SEO, Nuxt content layer, deploy
 
 ### Как выбирать проект
 
-- для ранних модулей лучше брать CRUD без сложной бизнес-логики
-- для середины плана важны router, store, API и формы
-- для поздних модулей полезно брать проект, где есть смысл в архитектуре, тестах и `Nuxt`
-- если проект кажется слишком большим, сначала урезать scope до MVP
+- для ранних модулей лучше брать `easy` CRUD без сложной бизнес-логики
+- для середины плана важны router, store, API и формы — смотри `medium`
+- для поздних модулей полезно брать `hard`, где есть смысл в архитектуре, тестах и `Nuxt`
+- если проект кажется слишком большим, начинай только с блока **MVP**
+- блок **Потом можно добавить** — это не обязательный scope, а направление роста
 
-### Хороший MVP для любого pet-project
+### Универсальный шаблон MVP
 
-Почти любой проект достаточно начать с такого минимума:
+Почти любой проект можно стартовать с такого минимума:
 
 - список сущностей
 - страница деталей
