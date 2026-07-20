@@ -143,7 +143,7 @@
 ### Теория
 
 - `ref` — [теория, `.value`, reactivity, TypeScript, ссылки](docs/module-2/01-ref.md)
-- `reactive`
+- `reactive` — [теория, proxy, ограничения, ref vs reactive, ссылки](docs/module-2/02-reactive.md)
 - `computed`
 - `watch`
 - `watchEffect`
