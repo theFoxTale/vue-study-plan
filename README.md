@@ -178,7 +178,7 @@
 
 ### Теория
 
-- props
+- props — [теория, component API, container/presentational, prop drilling, ссылки](docs/module-3/01-props.md)
 - emits
 - slots
 - named slots
