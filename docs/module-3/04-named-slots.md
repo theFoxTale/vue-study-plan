@@ -567,6 +567,6 @@ Named slots дают дереву компонентов читаемую стр
 
 Следующий теоретический блок Module 3:
 
-- **`scoped slots`**
+- **[`scoped slots`](./05-scoped-slots.md)**
 
 Named slots задают **где** показать content. Scoped slots позволяют child **передать данные** в этот content — например, `item` из списка.
