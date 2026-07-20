@@ -507,6 +507,6 @@ BaseButton / BaseCard / BaseModal — reusable shells
 
 Следующий теоретический блок Module 3:
 
-- **базовая доступность: семантика, `label`, `button`, focus states**
+- **[базовая доступность: семантика, `label`, `button`, focus states](./09-accessibility-basics.md)**
 
 После того как дерево components собрано, нужно убедиться, что interactive UI можно нормально использовать с клавиатуры и screen-reader-friendly разметкой.
