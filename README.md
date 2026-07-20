@@ -150,8 +150,8 @@
 - жизненный цикл: `onMounted`, `onUpdated`, `onUnmounted` — [теория, mount/update/unmount, fetch, cleanup, ссылки](docs/module-2/06-lifecycle-hooks.md)
 - `defineProps` — [теория, one-way data flow, TypeScript, validation, ссылки](docs/module-2/07-defineProps.md)
 - `defineEmits` — [теория, props down/events up, v-model, TypeScript, ссылки](docs/module-2/08-defineEmits.md)
-- `defineExpose`
-- отличие `Composition API` от `Options API`
+- `defineExpose` — [теория, template ref, public API, когда не использовать, ссылки](docs/module-2/09-defineExpose.md)
+- отличие `Composition API` от `Options API` — [теория, сравнение, mapping, когда что использовать, ссылки](docs/module-2/10-composition-api-vs-options-api.md)
 
 ### Практика
 
