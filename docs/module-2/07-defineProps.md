@@ -579,6 +579,6 @@ props.query = 'new' // ❌
 
 Следующий теоретический блок Module 2:
 
-- **`defineEmits`**
+- **[`defineEmits`](./08-defineEmits.md)**
 
 Если `defineProps` отвечает на вопрос «как data идёт вниз», то `defineEmits` — «как события и изменения идут вверх».

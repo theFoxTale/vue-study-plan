@@ -149,7 +149,7 @@
 - `watchEffect` — [теория, auto-tracking, watch vs watchEffect, async, ссылки](docs/module-2/05-watchEffect.md)
 - жизненный цикл: `onMounted`, `onUpdated`, `onUnmounted` — [теория, mount/update/unmount, fetch, cleanup, ссылки](docs/module-2/06-lifecycle-hooks.md)
 - `defineProps` — [теория, one-way data flow, TypeScript, validation, ссылки](docs/module-2/07-defineProps.md)
-- `defineEmits`
+- `defineEmits` — [теория, props down/events up, v-model, TypeScript, ссылки](docs/module-2/08-defineEmits.md)
 - `defineExpose`
 - отличие `Composition API` от `Options API`
 
