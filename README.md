@@ -144,7 +144,7 @@
 
 - `ref` — [теория, `.value`, reactivity, TypeScript, ссылки](docs/module-2/01-ref.md)
 - `reactive` — [теория, proxy, ограничения, ref vs reactive, ссылки](docs/module-2/02-reactive.md)
-- `computed`
+- `computed` — [теория, derived state, caching, filter/sort, ссылки](docs/module-2/03-computed.md)
 - `watch`
 - `watchEffect`
 - жизненный цикл: `onMounted`, `onUpdated`, `onUnmounted`

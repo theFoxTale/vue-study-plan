@@ -556,6 +556,6 @@ const state = reactive({
 
 Следующий теоретический блок Module 2:
 
-- **`computed`**
+- **[`computed`](./03-computed.md)**
 
 Именно `computed` поможет на базе `ref`/`reactive` state сделать derived data: отфильтрованный список, отсортированные товары, счётчики и другие вычисляемые значения.
