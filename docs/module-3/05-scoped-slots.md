@@ -550,6 +550,6 @@ const { x, y } = useMouse()
 
 Следующий теоретический блок Module 3:
 
-- **локальная и глобальная регистрация компонентов**
+- **[локальная и глобальная регистрация компонентов](./06-component-registration.md)**
 
 После slots логично понять, **как components попадают в template**: import + local use vs global registration.
