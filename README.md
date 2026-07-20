@@ -73,7 +73,7 @@
 - роль `Vue` в современном frontend — [теория, ссылки и видео](docs/module-0/01-vue-role-in-modern-frontend.md)
 - отличие `Vue` от `React` и `Angular` — [теория, сравнение, ссылки и видео](docs/module-0/02-vue-vs-react-vs-angular.md)
 - `Node.js`, `npm`, `pnpm` — [теория, команды, сравнение, ссылки и видео](docs/module-0/03-nodejs-npm-pnpm.md)
-- установка `Vue Devtools`
+- установка `Vue Devtools` — [теория, установка, проверка, ссылки и видео](docs/module-0/04-vue-devtools.md)
 - базовая настройка редактора для работы с `.vue`
 
 ### Практика
