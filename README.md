@@ -146,7 +146,7 @@
 - `reactive` — [теория, proxy, ограничения, ref vs reactive, ссылки](docs/module-2/02-reactive.md)
 - `computed` — [теория, derived state, caching, filter/sort, ссылки](docs/module-2/03-computed.md)
 - `watch` — [теория, side effects, async fetch, immediate/deep, ссылки](docs/module-2/04-watch.md)
-- `watchEffect`
+- `watchEffect` — [теория, auto-tracking, watch vs watchEffect, async, ссылки](docs/module-2/05-watchEffect.md)
 - жизненный цикл: `onMounted`, `onUpdated`, `onUnmounted`
 - `defineProps`, `defineEmits`
 - `defineExpose`
