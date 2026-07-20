@@ -180,7 +180,7 @@
 
 - props — [теория, component API, container/presentational, prop drilling, ссылки](docs/module-3/01-props.md)
 - emits — [теория, output contract, props down/events up, payload design, ссылки](docs/module-3/02-emits.md)
-- slots
+- slots — [теория, default slot, fallback, props vs slots, UI wrappers, ссылки](docs/module-3/03-slots.md)
 - named slots
 - scoped slots
 - локальная и глобальная регистрация компонентов

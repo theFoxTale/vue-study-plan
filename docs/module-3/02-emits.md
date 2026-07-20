@@ -572,6 +572,6 @@ CatalogPage
 
 Следующий теоретический блок Module 3:
 
-- **`slots`**
+- **[`slots`](./03-slots.md)**
 
 Props и emits описывают data/events. Slots описывают **как parent вставляет custom content** внутрь child — следующий уровень переиспользования UI.
