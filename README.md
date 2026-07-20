@@ -147,7 +147,7 @@
 - `computed` — [теория, derived state, caching, filter/sort, ссылки](docs/module-2/03-computed.md)
 - `watch` — [теория, side effects, async fetch, immediate/deep, ссылки](docs/module-2/04-watch.md)
 - `watchEffect` — [теория, auto-tracking, watch vs watchEffect, async, ссылки](docs/module-2/05-watchEffect.md)
-- жизненный цикл: `onMounted`, `onUpdated`, `onUnmounted`
+- жизненный цикл: `onMounted`, `onUpdated`, `onUnmounted` — [теория, mount/update/unmount, fetch, cleanup, ссылки](docs/module-2/06-lifecycle-hooks.md)
 - `defineProps`, `defineEmits`
 - `defineExpose`
 - отличие `Composition API` от `Options API`

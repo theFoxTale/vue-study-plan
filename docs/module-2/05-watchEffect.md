@@ -575,6 +575,6 @@ watchEffect(async (onCleanup) => {
 
 Следующий теоретический блок Module 2:
 
-- **жизненный цикл: `onMounted`, `onUpdated`, `onUnmounted`**
+- **[жизненный цикл: `onMounted`, `onUpdated`, `onUnmounted`](./06-lifecycle-hooks.md)**
 
 После reactivity API логично разобрать, **когда** component mount/update/unmount и как в этих фазах безопасно запускать effects, fetch и cleanup.
