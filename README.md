@@ -119,6 +119,7 @@
 
 ### Практика
 
+- [практический checklist Module 1](docs/module-1/14-practice-checklist.md)
 - приложение `Todo List`
 - список заметок
 - мини-трекер привычек
