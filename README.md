@@ -106,7 +106,7 @@
 - создание проекта через `create-vue` — [теория, команды, опции, ссылки](docs/module-1/01-create-vue.md)
 - структура приложения на `Vite` — [теория, файлы, запуск, ссылки](docs/module-1/02-vite-project-structure.md)
 - `Single File Components` — [теория, структура `.vue`, script/template/style, ссылки](docs/module-1/03-single-file-components.md)
-- секции `<template>`, `<script setup>`, `<style>`
+- секции `<template>`, `<script setup>`, `<style>` — [теория по каждой секции SFC](docs/module-1/04-sfc-sections-template-script-style.md)
 - интерполяция
 - события
 - директивы: `v-bind`, `v-if`, `v-show`, `v-for`, `v-model`, `v-on`
