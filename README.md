@@ -190,6 +190,7 @@
 
 ### Практика
 
+- [практический checklist Module 3](docs/module-3/10-practice-checklist.md)
 - карточки товаров
 - каталог
 - модальные окна
