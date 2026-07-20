@@ -108,7 +108,7 @@
 - `Single File Components` — [теория, структура `.vue`, script/template/style, ссылки](docs/module-1/03-single-file-components.md)
 - секции `<template>`, `<script setup>`, `<style>` — [теория по каждой секции SFC](docs/module-1/04-sfc-sections-template-script-style.md)
 - интерполяция — [теория, mustache `{{ }}`, expressions, ссылки](docs/module-1/05-interpolation.md)
-- события
+- события — [теория, `@click`, modifiers, forms, ссылки](docs/module-1/06-events.md)
 - директивы: `v-bind`, `v-if`, `v-show`, `v-for`, `v-model`, `v-on`
 - работа с формами на базовом уровне
 
