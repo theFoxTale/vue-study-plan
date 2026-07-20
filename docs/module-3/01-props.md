@@ -572,6 +572,6 @@ CatalogPage
 
 Следующий теоретический блок Module 3:
 
-- **`emits`**
+- **[`emits`](./02-emits.md)**
 
 Если props — это input contract, то emits — output contract: как component сообщает parent о действиях пользователя.

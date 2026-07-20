@@ -179,7 +179,7 @@
 ### Теория
 
 - props — [теория, component API, container/presentational, prop drilling, ссылки](docs/module-3/01-props.md)
-- emits
+- emits — [теория, output contract, props down/events up, payload design, ссылки](docs/module-3/02-emits.md)
 - slots
 - named slots
 - scoped slots
