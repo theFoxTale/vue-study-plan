@@ -185,7 +185,7 @@
 - scoped slots — [теория, slot props, flexible lists/tables, vs composables, ссылки](docs/module-3/05-scoped-slots.md)
 - локальная и глобальная регистрация компонентов — [теория, local import vs `app.component`, tree-shaking, ссылки](docs/module-3/06-component-registration.md)
 - контейнерные и презентационные компоненты — [теория, smart/dumb, composables, catalog architecture, ссылки](docs/module-3/07-container-presentational.md)
-- принципы декомпозиции UI
+- принципы декомпозиции UI — [теория, размеры components, page/feature/base, когда резать, ссылки](docs/module-3/08-ui-decomposition.md)
 - базовая доступность: семантика, `label`, `button`, focus states
 
 ### Практика
