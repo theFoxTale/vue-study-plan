@@ -593,7 +593,5 @@ Composable — это function, которая **использует Vue reacti
 
 Следующий шаг:
 
-- **практика Module 2** — catalog app, composables, fetch
+- **[практика Module 2](./11-practice-checklist.md)** — catalog app, composables, fetch
 - затем **Module 3 · Компонентная архитектура**
-
-Если хочешь, могу следующим подготовить **practice checklist для Module 2**, как это было в Module 0 и Module 1.
