@@ -103,7 +103,7 @@
 
 ### Теория
 
-- создание проекта через `create-vue`
+- создание проекта через `create-vue` — [теория, команды, опции, ссылки](docs/module-1/01-create-vue.md)
 - структура приложения на `Vite`
 - `Single File Components`
 - секции `<template>`, `<script setup>`, `<style>`
