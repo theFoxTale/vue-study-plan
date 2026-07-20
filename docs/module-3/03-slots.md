@@ -500,6 +500,6 @@ Slot content принадлежит parent.
 
 Следующий теоретический блок Module 3:
 
-- **`named slots`**
+- **[`named slots`](./04-named-slots.md)**
 
 Когда одной default зоны мало — появляются `header`, `footer`, `actions` и другие именованные области layout.
