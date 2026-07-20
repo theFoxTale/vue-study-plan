@@ -145,7 +145,7 @@
 - `ref` — [теория, `.value`, reactivity, TypeScript, ссылки](docs/module-2/01-ref.md)
 - `reactive` — [теория, proxy, ограничения, ref vs reactive, ссылки](docs/module-2/02-reactive.md)
 - `computed` — [теория, derived state, caching, filter/sort, ссылки](docs/module-2/03-computed.md)
-- `watch`
+- `watch` — [теория, side effects, async fetch, immediate/deep, ссылки](docs/module-2/04-watch.md)
 - `watchEffect`
 - жизненный цикл: `onMounted`, `onUpdated`, `onUnmounted`
 - `defineProps`, `defineEmits`

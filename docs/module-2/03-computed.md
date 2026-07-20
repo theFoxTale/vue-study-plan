@@ -629,6 +629,6 @@ const visibleProducts = computed(() => {
 
 Следующий теоретический блок Module 2:
 
-- **`watch`**
+- **[`watch`](./04-watch.md)**
 
 Если `computed` отвечает на вопрос «какое значение получить из state», то `watch` — на вопрос «что сделать, когда state изменился».
