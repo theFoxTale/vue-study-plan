@@ -78,6 +78,8 @@
 
 ### Практика
 
+[Чек-лист Module 0](docs/module-0/06-practice-checklist.md)
+
 - установить окружение
 - создать тестовый проект
 - подключить `TypeScript`, `ESLint`, `Prettier`
