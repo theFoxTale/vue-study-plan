@@ -637,6 +637,6 @@ onMounted(async () => {
 
 Следующий теоретический блок Module 2:
 
-- **`defineProps`**
+- **[`defineProps`](./07-defineProps.md)**
 
 После lifecycle логично перейти к **коммуникации между компонентами**: как родитель передаёт data внутрь child component.
