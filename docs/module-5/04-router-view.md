@@ -356,6 +356,4 @@ Page = меняется в outlet.
 
 Следующий теоретический блок Module 5:
 
-- **`useRouter`**
-
-Разберём programmatic navigation: `push`, `replace`, `back` из Composition API.
+- [`useRouter`](./05-use-router.md)

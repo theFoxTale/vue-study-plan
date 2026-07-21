@@ -250,7 +250,7 @@
 - создание router instance — [теория, createRouter, history, routes, app.use(router)](docs/module-5/02-creating-router-instance.md)
 - `RouterLink` — [теория, to, named routes, active classes, replace](docs/module-5/03-router-link.md)
 - `RouterView` — [теория, outlet, layout shell, Transition, nested preview](docs/module-5/04-router-view.md)
-- `useRouter`
+- `useRouter` — [теория, push/replace/back, vs RouterLink, Promise](docs/module-5/05-use-router.md)
 - `useRoute`
 - динамические маршруты
 - nested routes
