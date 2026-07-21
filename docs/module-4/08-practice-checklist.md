@@ -387,7 +387,7 @@ Module 4 можно считать завершённым, если:
 
 Переходи к **Module 5 · Маршрутизация**:
 
-- Vue Router 4
+- [Vue Router 4](../module-5/01-vue-router-4.md)
 - pages / dynamic routes
 - `useRoute` / `useRouter`
 - lazy loading
