@@ -493,8 +493,8 @@ Module 8 можно считать завершённым, если:
 
 Переходи к **Module 9 · Формы и валидация**:
 
-- сложный `v-model`, controlled patterns
-- VeeValidate + Zod
+- [сложный v-model](../module-9/01-complex-v-model.md)
+- кастомные поля, VeeValidate + Zod
 - login / register / profile forms
 
 Catalog уже на vue-query — Module 9 добавит **формы** поверх mutation flow *(create/edit product, auth)*.

@@ -384,7 +384,7 @@
 
 ### Теория
 
-- сложный `v-model`
+- сложный `v-model` — [теория, defineModel, named models, modifiers, object model](docs/module-9/01-complex-v-model.md)
 - кастомные поля
 - controlled patterns во Vue-терминах
 - `VeeValidate`
