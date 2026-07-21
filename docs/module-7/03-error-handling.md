@@ -360,6 +360,4 @@ async function load() {
 
 Следующий теоретический блок Module 7:
 
-- **состояния `loading / error / success / empty`**
-
-Соберём полный state machine экрана данных.
+- [состояния `loading / error / success / empty`](./04-async-ui-states.md)

@@ -319,7 +319,7 @@
 - `fetch` — [теория, Response, ok, JSON, api module, vs Pinia data](docs/module-7/01-fetch.md)
 - `axios` — [теория, vs fetch, instance, interceptors, response.data](docs/module-7/02-axios.md)
 - обработка ошибок — [теория, типы ошибок, AppError, UI messages, retry](docs/module-7/03-error-handling.md)
-- состояния `loading / error / success / empty`
+- состояния `loading / error / success / empty` — [теория, state machine, empty vs error, soft loading](docs/module-7/04-async-ui-states.md)
 - пагинация
 - query params
 - отмена запросов
