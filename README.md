@@ -520,7 +520,7 @@
 - подходы к naming — [теория, компоненты, composables, stores, query keys, anti-patterns](docs/module-13/04-naming.md)
 - слой API — [теория, http client, entity endpoints, parse, vue-query boundary](docs/module-13/05-api-layer.md)
 - слой composables — [теория, placement по слоям, vs Pinia, god-composable, cleanup](docs/module-13/06-composables-layer.md)
-- слой stores
+- слой stores — [теория, Pinia placement, vs query/composable, god store, actions](docs/module-13/07-stores-layer.md)
 - работа с `env`
 - базовые принципы масштабируемости
 
