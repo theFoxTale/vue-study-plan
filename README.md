@@ -224,6 +224,7 @@
 
 ### Практика
 
+- [практический checklist Module 4](docs/module-4/08-practice-checklist.md)
 - перевести один из предыдущих проектов в строгий `TypeScript`
 - описать модели данных
 - убрать `any`
