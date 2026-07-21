@@ -297,6 +297,4 @@ Parse/error в component — дублирование Module 7 ошибок.
 
 Следующий теоретический блок Module 8:
 
-- **`@tanstack/vue-query`**
-
-Установка, `QueryClient`, `VueQueryPlugin`, первый `useQuery`.
+- [`@tanstack/vue-query`](./02-vue-query.md)
