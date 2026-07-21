@@ -397,6 +397,4 @@ Page = содержимое child route.
 
 Следующий теоретический блок Module 5:
 
-- **redirects**
-
-Разберём `redirect` / `alias`, стартовые переходы и «старый URL → новый».
+- [redirects](./09-redirects.md)
