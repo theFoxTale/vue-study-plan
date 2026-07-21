@@ -488,7 +488,7 @@
 - `v-memo` — [теория, deps array, v-for lists, vs v-once, stale UI traps](docs/module-12/05-v-memo.md)
 - `shallowRef` — [теория, shallow vs deep, triggerRef, markRaw, immutable lists](docs/module-12/06-shallow-ref.md)
 - code splitting — [теория, dynamic import, chunks, vendor split, build analyze](docs/module-12/07-code-splitting.md)
-- lazy components
+- lazy components — [теория, defineAsyncComponent, Suspense, tabs/modals, loading UX](docs/module-12/08-lazy-components.md)
 - оптимизация загрузки страниц
 - `Vue Devtools`
 
