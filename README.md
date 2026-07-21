@@ -355,7 +355,7 @@
 - `@tanstack/vue-query` — [теория, QueryClient, useQuery, queryKey, vs Module 7](docs/module-8/02-vue-query.md)
 - queries — [теория, query keys factory, filters, enabled, select, dependent](docs/module-8/03-queries.md)
 - mutations — [теория, useMutation, mutateAsync, forms, vs Pinia](docs/module-8/04-mutations.md)
-- invalidation
+- invalidation — [теория, invalidateQueries, setQueryData, removeQueries, factory keys](docs/module-8/05-invalidation.md)
 - optimistic updates
 - retries
 - cache lifecycle

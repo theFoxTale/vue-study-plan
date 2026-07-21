@@ -379,6 +379,4 @@ ok; с `mutateAsync` проще linear flow.
 
 Следующий теоретический блок Module 8:
 
-- **invalidation**
-
-Разберём `invalidateQueries`, `setQueryData`, `removeQueries`, связку mutation → fresh list.
+- [invalidation](./05-invalidation.md)
