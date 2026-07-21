@@ -361,6 +361,4 @@ Modal можно оставить как доп. UX, но detail page через
 
 Следующий теоретический блок Module 5:
 
-- **создание router instance**
-
-Разберём `createRouter`, `createWebHistory`, файл `router/index.ts` и подключение через `app.use(router)`.
+- [создание router instance](./02-creating-router-instance.md)

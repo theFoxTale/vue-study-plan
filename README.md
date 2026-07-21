@@ -247,7 +247,7 @@
 ### Теория
 
 - `Vue Router 4` — [теория, SPA routing, pages vs components, history modes, ссылки](docs/module-5/01-vue-router-4.md)
-- создание router instance
+- создание router instance — [теория, createRouter, history, routes, app.use(router)](docs/module-5/02-creating-router-instance.md)
 - `RouterLink`
 - `RouterView`
 - `useRouter`
