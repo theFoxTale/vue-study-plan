@@ -506,5 +506,3 @@ Session in auth store; don't `useUser()` composable mirroring store without reas
 Следующий теоретический блок Module 10:
 
 - [patterns для modal, dropdown, tabs, notifications](./06-ui-patterns.md)
-
-Соберём компоненты catalog app в единый reusable UI kit.

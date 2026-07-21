@@ -422,7 +422,7 @@
 - transitions — [теория, Transition/TransitionGroup, modal/toast/list, reduced motion](docs/module-10/03-transitions.md)
 - custom directives — [теория, v-focus, v-click-outside, hooks, vs composable](docs/module-10/04-custom-directives.md)
 - composables как слой повторного использования — [теория, useModal, useToast, useDisclosure, API design](docs/module-10/05-composables-reuse-layer.md)
-- patterns для modal, dropdown, tabs, notifications
+- patterns для modal, dropdown, tabs, notifications — [теория, UI kit, BaseModal, ToastContainer, demo](docs/module-10/06-ui-patterns.md)
 
 ### Практика
 
