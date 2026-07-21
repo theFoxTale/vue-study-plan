@@ -490,7 +490,7 @@
 - code splitting — [теория, dynamic import, chunks, vendor split, build analyze](docs/module-12/07-code-splitting.md)
 - lazy components — [теория, defineAsyncComponent, Suspense, tabs/modals, loading UX](docs/module-12/08-lazy-components.md)
 - оптимизация загрузки страниц — [теория, LCP/CLS/INP, images, fonts, query waterfall](docs/module-12/09-page-load-optimization.md)
-- `Vue Devtools`
+- `Vue Devtools` — [теория, Components, Timeline, Pinia, Query devtools, highlight updates](docs/module-12/10-vue-devtools.md)
 
 ### Практика
 
