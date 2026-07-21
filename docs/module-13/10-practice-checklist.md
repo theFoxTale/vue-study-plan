@@ -385,13 +385,11 @@ Module 13 можно считать завершённым, если:
 
 Переходи к **Module 14 · SSR, SSG и Nuxt 3**:
 
-- CSR vs SSR vs SSG
+- [CSR / SSR / SSG / hybrid](../module-14/01-csr-ssr-ssg-hybrid.md)
 - когда Nuxt нужен, а когда Vue + Vite достаточно
 - file routing, layouts, `useFetch` / `useAsyncData`
 
 Архитектура Module 13 **переносится** в Nuxt слоями (`pages/`, `components/`, `composables/`, server) — границы важнее названий папок.
-
-- [Module 14 в README](../../README.md#module-14-ssr-ssg-и-nuxt-3)
 
 ---
 
