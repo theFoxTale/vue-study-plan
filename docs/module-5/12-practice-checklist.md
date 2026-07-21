@@ -409,6 +409,7 @@ Module 5 можно считать завершённым, если:
 Переходи к **Module 6 · Управление состоянием**:
 
 - [локальное состояние vs глобальное](../module-6/01-local-vs-global-state.md)
+- [практический checklist Module 6](../module-6/10-practice-checklist.md) *(после теории)*
 - `provide/inject`
 - Pinia: state / getters / actions / setup stores
 
