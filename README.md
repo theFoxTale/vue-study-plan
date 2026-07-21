@@ -447,7 +447,7 @@
 
 ### Теория
 
-- `Vitest`
+- `Vitest` — [теория, setup, config, describe/expect, colocated tests](docs/module-11/01-vitest.md)
 - `Vue Test Utils`
 - unit tests
 - component tests

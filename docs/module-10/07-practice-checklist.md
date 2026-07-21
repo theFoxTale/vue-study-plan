@@ -373,10 +373,9 @@ Module 10 можно считать завершённым, если:
 
 Переходи к **Module 11 · Тестирование**:
 
-- Vitest + Vue Test Utils
-- component tests, composable tests
-- mock API
-- Playwright/Cypress intro
+- [Vitest](../module-11/01-vitest.md)
+- Vue Test Utils, composables/store tests
+- mock API, e2e intro
 
 UI kit готов — Module 11 покроет **tests** для composables и critical flows.
 
