@@ -409,5 +409,3 @@ Module 11 practice:
 Следующий теоретический блок Module 11:
 
 - [мокирование API](./07-api-mocking.md)
-
-Разберём `vi.mock`, `vi.spyOn`, MSW, моки в store/component/composable tests.

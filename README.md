@@ -453,7 +453,7 @@
 - component tests — [теория, mount flows, forms, query, stubs, catalog MVP](docs/module-11/04-component-tests.md)
 - тестирование composables — [теория, withSetup, useModal/useToast, shared state](docs/module-11/05-composables-testing.md)
 - тестирование store — [теория, Pinia, setActivePinia, cart/auth actions, getters](docs/module-11/06-store-testing.md)
-- мокирование API
+- мокирование API — [теория, vi.spyOn, vi.mock, fixtures, MSW overview](docs/module-11/07-api-mocking.md)
 - базовый e2e-подход через `Playwright` или `Cypress`
 - что стоит тестировать, а что нет
 - тестирование поведения, а не деталей реализации
