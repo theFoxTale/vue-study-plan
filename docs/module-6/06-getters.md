@@ -315,6 +315,4 @@ Getters синхронные и чистые. Async — **actions**.
 
 Следующий теоретический блок Module 6:
 
-- **`actions`**
-
-Разберём изменения state, async logic, вызовы других stores и границы ответственности actions.
+- [`actions`](./07-actions.md)

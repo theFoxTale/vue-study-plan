@@ -287,7 +287,7 @@
 - `Pinia` — [теория, установка, defineStore, storeToRefs, vs DIY global](docs/module-6/04-pinia.md)
 - `state` — [теория, initial state, $patch, $reset, типизация](docs/module-6/05-state.md)
 - `getters` — [теория, computed store, this, параметры, другие stores](docs/module-6/06-getters.md)
-- `actions`
+- `actions` — [теория, мутации state, async, другие stores, vs UI](docs/module-6/07-actions.md)
 - setup stores
 - best practices проектирования store
 
