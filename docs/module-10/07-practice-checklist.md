@@ -376,6 +376,7 @@ Module 10 можно считать завершённым, если:
 - [Vitest](../module-11/01-vitest.md)
 - Vue Test Utils, composables/store tests
 - mock API, e2e intro
+- [практический checklist Module 11](../module-11/10-practice-checklist.md) *(после теории)*
 
 UI kit готов — Module 11 покроет **tests** для composables и critical flows.
 

@@ -381,6 +381,4 @@ Api module contract + UI enough.
 
 Теория Module 11 завершена. Переходи к практике:
 
-- [Module 11 · practice checklist](./10-practice-checklist.md)
-
-Собери unit + component + store tests; optional e2e; `npm run test:run` в CI-ready состоянии.
+- [Module 11 · practice checklist](./10-practice-checklist.md) — unit + component + store, test:run green
