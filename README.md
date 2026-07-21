@@ -484,7 +484,7 @@
 - как работает реактивность под капотом — [теория, Proxy, track/trigger, ref/reactive, computed, effect scope](docs/module-12/01-reactivity-internals.md)
 - лишние перерендеры — [теория, parent/child, unstable props, Pinia/query, diagnose](docs/module-12/02-unnecessary-rerenders.md)
 - значение `key` — [теория, v-for identity, index anti-pattern, router/TransitionGroup](docs/module-12/03-key.md)
-- `v-once`
+- `v-once` — [теория, static subtree, freeze, vs v-memo, catalog footer](docs/module-12/04-v-once.md)
 - `v-memo`
 - `shallowRef`
 - code splitting
