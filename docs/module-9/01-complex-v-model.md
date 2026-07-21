@@ -357,7 +357,7 @@ function submit() {
 
 Для validation library и disabled/pending states нужен **controlled**.
 
-Подробнее — [controlled patterns](./04-controlled-patterns.md).
+Подробнее — [controlled patterns](./03-controlled-patterns.md).
 
 ---
 
@@ -485,5 +485,3 @@ Draft формы — **local** до submit; не пиши каждый keystroke
 Следующий теоретический блок Module 9:
 
 - [кастомные поля](./02-custom-fields.md)
-
-Разберём input/select/textarea wrappers, slots, a11y, error display hook points.

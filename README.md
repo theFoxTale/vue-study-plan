@@ -385,7 +385,7 @@
 ### Теория
 
 - сложный `v-model` — [теория, defineModel, named models, modifiers, object model](docs/module-9/01-complex-v-model.md)
-- кастомные поля
+- кастомные поля — [теория, FormField, BaseInput, a11y, error hooks](docs/module-9/02-custom-fields.md)
 - controlled patterns во Vue-терминах
 - `VeeValidate`
 - `Zod`
