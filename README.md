@@ -288,7 +288,7 @@
 - `state` — [теория, initial state, $patch, $reset, типизация](docs/module-6/05-state.md)
 - `getters` — [теория, computed store, this, параметры, другие stores](docs/module-6/06-getters.md)
 - `actions` — [теория, мутации state, async, другие stores, vs UI](docs/module-6/07-actions.md)
-- setup stores
+- setup stores — [теория, ref/computed/function, return state, $reset, vs Options](docs/module-6/08-setup-stores.md)
 - best practices проектирования store
 
 ### Практика

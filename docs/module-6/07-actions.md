@@ -376,6 +376,4 @@ actions: {
 
 Следующий теоретический блок Module 6:
 
-- **setup stores**
-
-Разберём `defineStore(id, () => { ... })`, `ref`/`computed` вместо state/getters и как писать actions-функции.
+- [setup stores](./08-setup-stores.md)
