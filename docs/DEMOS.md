@@ -11,6 +11,7 @@
 Связанные файлы:
 
 - [RESOURCES.md](./RESOURCES.md) — статьи и видео
+- [CHEATSHEET.md](./CHEATSHEET.md) — краткий recall
 - [Module 15 checklist](./module-15/01-practice-checklist.md)
 
 ---

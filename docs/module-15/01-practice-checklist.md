@@ -271,7 +271,7 @@ npx nuxi@latest init my-final-project
 - [ ] портфолио: 2–3 законченных app  
 - [ ] свой короткий Vue 3 cheatsheet  
 
-Полезные ссылки: [RESOURCES.md](../RESOURCES.md), [DEMOS.md](../DEMOS.md).
+Полезные ссылки: [RESOURCES.md](../RESOURCES.md), [DEMOS.md](../DEMOS.md), [CHEATSHEET.md](../CHEATSHEET.md).
 
 ---
 

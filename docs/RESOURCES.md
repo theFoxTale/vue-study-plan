@@ -12,6 +12,7 @@
 Связанные файлы плана:
 
 - [Playgrounds и демо](./DEMOS.md)
+- [Cheatsheet Vue 3](./CHEATSHEET.md)
 - [README · официальные ресурсы](../README.md#официальные-ресурсы)
 
 ---

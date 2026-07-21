@@ -27,7 +27,7 @@
 - Теорию изучать по официальной документации, русскоязычные видео использовать как поддержку.
 - Все примеры писать сразу на `TypeScript`.
 - Для каждого модуля фиксировать критерии завершения: что именно должно быть реализовано, проверено и объяснимо своими словами.
-- Дополнительно: [статьи и видео](docs/RESOURCES.md), [playgrounds и демо](docs/DEMOS.md).
+- Дополнительно: [статьи и видео](docs/RESOURCES.md), [playgrounds и демо](docs/DEMOS.md), [cheatsheet](docs/CHEATSHEET.md).
 
 ## Как понимать, что модуль завершен
 
@@ -853,7 +853,7 @@
 - пройти техническое интервью по `Vue`
 - переписать 1-2 старых проекта с учетом новых знаний
 - собрать портфолио из 2-3 законченных приложений
-- написать собственный короткий cheatsheet по `Vue 3`
+- написать собственный короткий cheatsheet по `Vue 3` *(старт: [docs/CHEATSHEET.md](docs/CHEATSHEET.md))*
 - опереться на [checklist Module 15](docs/module-15/01-practice-checklist.md), [RESOURCES](docs/RESOURCES.md) и [DEMOS](docs/DEMOS.md)
 
 ---
@@ -871,6 +871,8 @@
 По модулям (статьи + видео): [docs/RESOURCES.md](docs/RESOURCES.md)
 
 Playgrounds, starters и внешние демо: [docs/DEMOS.md](docs/DEMOS.md)
+
+Краткая шпаргалка Vue 3 по плану: [docs/CHEATSHEET.md](docs/CHEATSHEET.md)
 
 ## Русскоязычные ресурсы
 
