@@ -486,5 +486,3 @@ Desync — см. [урок 01](./01-complex-v-model.md).
 Следующий теоретический блок Module 9:
 
 - [VeeValidate](./04-veevalidate.md)
-
-Разберём `useForm`, `Field`, `handleSubmit`, интеграцию с `TextField`.
