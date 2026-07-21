@@ -321,6 +321,4 @@ Pinia не трекает свойство.
 
 Следующий (последний теоретический) блок Module 6:
 
-- **best practices проектирования store**
-
-Разберём границы доменов, naming, что не класть в store и как не вырастить god store.
+- [best practices проектирования store](./09-store-best-practices.md)

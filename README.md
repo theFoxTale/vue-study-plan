@@ -289,7 +289,7 @@
 - `getters` — [теория, computed store, this, параметры, другие stores](docs/module-6/06-getters.md)
 - `actions` — [теория, мутации state, async, другие stores, vs UI](docs/module-6/07-actions.md)
 - setup stores — [теория, ref/computed/function, return state, $reset, vs Options](docs/module-6/08-setup-stores.md)
-- best practices проектирования store
+- best practices проектирования store — [теория, домены, naming, слои, anti god-store](docs/module-6/09-store-best-practices.md)
 
 ### Практика
 
