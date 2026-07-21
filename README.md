@@ -483,7 +483,7 @@
 
 - как работает реактивность под капотом — [теория, Proxy, track/trigger, ref/reactive, computed, effect scope](docs/module-12/01-reactivity-internals.md)
 - лишние перерендеры — [теория, parent/child, unstable props, Pinia/query, diagnose](docs/module-12/02-unnecessary-rerenders.md)
-- значение `key`
+- значение `key` — [теория, v-for identity, index anti-pattern, router/TransitionGroup](docs/module-12/03-key.md)
 - `v-once`
 - `v-memo`
 - `shallowRef`
