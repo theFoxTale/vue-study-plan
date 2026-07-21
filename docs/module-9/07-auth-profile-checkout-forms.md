@@ -492,6 +492,4 @@ Omit before `register()`.
 
 Теория Module 9 завершена. Переходи к практике:
 
-- [Module 9 · practice checklist](./08-practice-checklist.md)
-
-Собери login + register + profile или checkout в catalog app с Zod schemas и VeeValidate.
+- [Module 9 · practice checklist](./08-practice-checklist.md) — login + register или profile, Zod, VeeValidate, TextField
