@@ -557,7 +557,7 @@
 - server routes — [теория, Nitro server/api, BFF, runtimeConfig, handlers](docs/module-14/08-server-routes.md)
 - SEO basics — [теория, useSeoMeta, OG, canonical, robots, sitemap, checklist](docs/module-14/09-seo-basics.md)
 - deployment basics — [теория, .output, presets, preview, env, platforms](docs/module-14/10-deployment.md)
-- когда `Nuxt` действительно нужен, а когда достаточно `Vue + Vite`
+- когда `Nuxt` действительно нужен, а когда достаточно `Vue + Vite` — [теория, decision tree, trade-offs, why-doc](docs/module-14/11-nuxt-vs-vue-vite.md)
 
 ### Практика
 
