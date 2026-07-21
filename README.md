@@ -390,7 +390,7 @@
 - `VeeValidate` — [теория, useForm, defineField, handleSubmit, TextField](docs/module-9/04-veevalidate.md)
 - `Zod` — [теория, schema, toTypedSchema, z.infer, reuse api/form](docs/module-9/05-zod.md)
 - синхронная и асинхронная валидация — [теория, blur/submit, async unique, 422, debounce](docs/module-9/06-sync-async-validation.md)
-- формы авторизации, профиля, checkout flow
+- формы авторизации, профиля, checkout flow — [теория, login/register/profile/wizard, Pinia, query](docs/module-9/07-auth-profile-checkout-forms.md)
 
 ### Практика
 
