@@ -325,6 +325,4 @@ UI получит axios envelope вместо payload.
 
 Следующий теоретический блок Module 7:
 
-- **обработка ошибок**
-
-Разберём network vs HTTP vs parse errors, нормализацию и как показывать их в UI.
+- [обработка ошибок](./03-error-handling.md)
