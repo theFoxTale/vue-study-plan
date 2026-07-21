@@ -364,6 +364,4 @@ URL уже сменился, возможен flash protected UI. Guard сраб
 
 Следующий (последний теоретический) блок Module 5:
 
-- **lazy loading routes**
-
-Разберём `() => import(...)`, code splitting pages и связку с performance SPA.
+- [lazy loading routes](./11-lazy-loading-routes.md)

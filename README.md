@@ -256,7 +256,7 @@
 - nested routes — [теория, children, nested RouterView, layouts, default child](docs/module-5/08-nested-routes.md)
 - redirects — [теория, redirect vs alias, function redirect, replace](docs/module-5/09-redirects.md)
 - navigation guards — [теория, beforeEach, meta, beforeEnter, leave/update](docs/module-5/10-navigation-guards.md)
-- lazy loading routes
+- lazy loading routes — [теория, dynamic import, code splitting, vs async components](docs/module-5/11-lazy-loading-routes.md)
 
 ### Практика
 
