@@ -249,7 +249,7 @@
 - `Vue Router 4` — [теория, SPA routing, pages vs components, history modes, ссылки](docs/module-5/01-vue-router-4.md)
 - создание router instance — [теория, createRouter, history, routes, app.use(router)](docs/module-5/02-creating-router-instance.md)
 - `RouterLink` — [теория, to, named routes, active classes, replace](docs/module-5/03-router-link.md)
-- `RouterView`
+- `RouterView` — [теория, outlet, layout shell, Transition, nested preview](docs/module-5/04-router-view.md)
 - `useRouter`
 - `useRoute`
 - динамические маршруты
