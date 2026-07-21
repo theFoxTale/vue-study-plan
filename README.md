@@ -419,7 +419,7 @@
 
 - `Teleport` — [теория, body/modal-root, modal/toast, z-index, a11y overview](docs/module-10/01-teleport.md)
 - `Suspense` — [теория, async setup, fallback, RouterView, vs vue-query](docs/module-10/02-suspense.md)
-- transitions
+- transitions — [теория, Transition/TransitionGroup, modal/toast/list, reduced motion](docs/module-10/03-transitions.md)
 - custom directives
 - composables как слой повторного использования
 - patterns для modal, dropdown, tabs, notifications

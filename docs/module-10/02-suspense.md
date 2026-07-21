@@ -447,5 +447,3 @@ Fallback только первый load — ok.
 Следующий теоретический блок Module 10:
 
 - [transitions](./03-transitions.md)
-
-Разберём `<Transition>`, `<TransitionGroup>`, enter/leave, modal/toast animations.
