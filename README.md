@@ -260,7 +260,7 @@
 
 ### Практика
 
-- многостраничное SPA
+- многостраничное SPA — [практический checklist](docs/module-5/12-practice-checklist.md)
 - блог, dashboard или каталог с detail page
 
 ### Что должно получиться
