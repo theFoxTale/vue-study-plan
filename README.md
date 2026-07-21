@@ -556,7 +556,7 @@
 - `useAsyncData` — [теория, key + handler, aggregate, api layer, vs useFetch](docs/module-14/07-use-async-data.md)
 - server routes — [теория, Nitro server/api, BFF, runtimeConfig, handlers](docs/module-14/08-server-routes.md)
 - SEO basics — [теория, useSeoMeta, OG, canonical, robots, sitemap, checklist](docs/module-14/09-seo-basics.md)
-- deployment basics
+- deployment basics — [теория, .output, presets, preview, env, platforms](docs/module-14/10-deployment.md)
 - когда `Nuxt` действительно нужен, а когда достаточно `Vue + Vite`
 
 ### Практика
