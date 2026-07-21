@@ -555,7 +555,7 @@
 - `useFetch` — [теория, SSR payload, key/watch, lazy, $fetch, vs vue-query](docs/module-14/06-use-fetch.md)
 - `useAsyncData` — [теория, key + handler, aggregate, api layer, vs useFetch](docs/module-14/07-use-async-data.md)
 - server routes — [теория, Nitro server/api, BFF, runtimeConfig, handlers](docs/module-14/08-server-routes.md)
-- SEO basics
+- SEO basics — [теория, useSeoMeta, OG, canonical, robots, sitemap, checklist](docs/module-14/09-seo-basics.md)
 - deployment basics
 - когда `Nuxt` действительно нужен, а когда достаточно `Vue + Vite`
 
