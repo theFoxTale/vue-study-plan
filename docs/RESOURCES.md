@@ -87,7 +87,7 @@
 | Docs | [Vue Router Guide](https://router.vuejs.org/guide/) | первоисточник |
 | Docs | [Lazy Loading Routes](https://router.vuejs.org/guide/advanced/lazy-loading.html) | code split |
 | Docs | [Navigation Guards](https://router.vuejs.org/guide/advanced/navigation-guards.html) | auth flows |
-| Video | [Vue Router 4 (official / community talks)](https://www.youtube.com/results?search_query=vue+router+4+tutorial) | при необходимости — короткое intro |
+| Video | см. блок **«Видео»** в [01-vue-router-4](./module-5/01-vue-router-4.md) | Eduardo talks + Ulbi |
 
 ---
 
@@ -99,6 +99,7 @@
 | Docs | [Composing Stores](https://pinia.vuejs.org/cookbook/composing-stores.html) | границы stores |
 | Docs | [Testing stores](https://pinia.vuejs.org/cookbook/testing.html) | Module 11 prep |
 | Article | [Pinia vs Vuex](https://pinia.vuejs.org/introduction.html#comparison-with-vuex-a-name-comparison-a) | зачем не Vuex 4 |
+| Video | см. блок **«Видео»** в [04-pinia](./module-6/04-pinia.md) | Disasterclass + DejaVue |
 
 ---
 
@@ -111,6 +112,7 @@
 | Docs | [MDN · Fetch](https://developer.mozilla.org/docs/Web/API/Fetch_API) | основы HTTP client |
 | Article | [React Query as a State Manager](https://tkdodo.eu/blog/react-query-as-a-state-manager) *(идеи переносятся на Vue)* | server vs client state |
 | Article | [Practical React Query](https://tkdodo.eu/blog/practical-react-query) | паттерны кеша (фреймворк-агностично) |
+| Video | см. блок **«Видео»** в [02-vue-query](./module-8/02-vue-query.md) | Tanner + TkDodo |
 
 ---
 
@@ -146,7 +148,7 @@
 | Docs | [Pinia testing](https://pinia.vuejs.org/cookbook/testing.html) | stores |
 | Docs | [Playwright](https://playwright.dev/docs/intro) | e2e stretch |
 | Article | [Testing Library guiding principles](https://testing-library.com/docs/guiding-principles/) | behavior > implementation |
-| Video | [Kent C. Dodds · Write tests](https://www.youtube.com/results?search_query=kent+c+dodds+write+tests) | философия (не Vue-specific) |
+| Video | см. блок **«Видео»** в [01-vitest](./module-11/01-vitest.md) | Anthony Fu + testing philosophy |
 
 ---
 
@@ -182,7 +184,7 @@
 | Docs | [Data Fetching](https://nuxt.com/docs/getting-started/data-fetching) | useFetch / useAsyncData |
 | Docs | [Nitro](https://nitro.build/) | server engine |
 | Docs | [SEO and Meta](https://nuxt.com/docs/getting-started/seo-meta) | useSeoMeta |
-| Video | [Nuxt Nation / Nuxt Conf talks](https://www.youtube.com/@nuxtlabs) | актуальные практики |
+| Video | см. блок **«Видео»** в [02-why-nuxt](./module-14/02-why-nuxt.md) | Daniel Roe talks |
 | Article | [web.dev · Rendering on the Web](https://web.dev/articles/rendering-on-the-web) | CSR/SSR/SSG без фреймворка |
 
 ---

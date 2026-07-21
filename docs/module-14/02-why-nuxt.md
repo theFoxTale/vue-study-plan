@@ -301,7 +301,37 @@ Conventions ≠ god pages; Module 13 rules остаются.
 
 ---
 
-## 16. Практическое мини-задание
+## 16. Видео для этого блока
+
+Docs Nuxt — must. Видео помогают увидеть SSR/HTML и «build from scratch».
+
+### Рекомендуется
+
+1. **Daniel Roe — Crafting a Nuxt 3 App from Scratch (Vue.js Nation 2024)**  
+   [YouTube](https://www.youtube.com/watch?v=WEaxO4j5lo0)  
+   Framework lead Nuxt: живой scaffold app + server/API mindset — идеально к Module 14 practice.
+
+2. **Daniel Roe — Nailing It with Nuxt 3 (VueConf US 2024)**  
+   [YouTube](https://www.youtube.com/watch?v=SUPkSeYHRRQ)  
+   Обзор экосистемы, стабильность, куда движется Nuxt — контекст «зачем meta-framework».
+
+### Дополнительно
+
+3. **Daniel Roe — Mastering Advanced Nuxt (This Dot)**  
+   [YouTube](https://www.youtube.com/watch?v=XnWXWye8sBM)  
+   Глубже (Nitro, fullstack) — после базового `nuxi init` и practice checklist.
+
+### Короткий маршрут
+
+| Время | Что |
+|------|-----|
+| ~45–50 мин | Crafting Nuxt 3 from Scratch |
+| + docs | [Nuxt Introduction](https://nuxt.com/docs/getting-started/introduction) |
+| практика | [Module 14 checklist](./12-practice-checklist.md) |
+
+---
+
+## 17. Практическое мини-задание
 
 1. Список болей текущего SPA для SEO/share — есть ли они?
 2. Открой Nuxt docs → Directory Structure — сопоставь с Module 13 папками.
@@ -311,7 +341,7 @@ Conventions ≠ god pages; Module 13 rules остаются.
 
 ---
 
-## 17. Мини-конспект
+## 18. Мини-конспект
 
 - Nuxt 3 = Vue + Vite + **routing/render/server conventions**
 - ценность: SSR/SSG/hybrid, file routes, Nitro, data helpers
@@ -321,7 +351,7 @@ Conventions ≠ god pages; Module 13 rules остаются.
 
 ---
 
-## 18. Что делать дальше
+## 19. Что делать дальше
 
 Следующий теоретический блок Module 14:
 

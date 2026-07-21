@@ -326,7 +326,37 @@ Modal можно оставить как доп. UX, но detail page через
 
 ---
 
-## 16. Практическое мини-задание
+## 16. Видео для этого блока
+
+Сначала официальный гайд Router. Видео — поддержка, не замена практики.
+
+### Рекомендуется
+
+1. **Eduardo San Martin Morote — From terrible to terrific frontend routers (dotJS 2025)**  
+   [YouTube](https://www.youtube.com/watch?v=E18HxqAvP7o)  
+   Автор Vue Router / Pinia: зачем роутер в SPA, эволюция подходов, навигация как UX. Хороший «почему», не только API.
+
+2. **Eduardo — State, Routing, and the Future of Vue**  
+   [YouTube](https://www.youtube.com/watch?v=ng7JSla1Vaw)  
+   Связка routing + state в экосистеме Vue — полезный контекст перед Pinia (Module 6).
+
+### Дополнительно (RU)
+
+3. **Ulbi TV · Vue 3 курс — блок про Vue Router**  
+   [YouTube · старт курса](https://www.youtube.com/watch?v=XzLuMtDelGk)  
+   Найди в таймкодах / оглавлении раздел Router; достаточно одного прохода + свой catalog routes.
+
+### Короткий маршрут
+
+| Время | Что |
+|------|-----|
+| ~30–40 мин | talk Eduardo (dotJS) |
+| + docs | [Getting Started · Vue Router](https://router.vuejs.org/guide/) |
+| практика | мини-задание ниже → `RouterLink` / `RouterView` в проекте |
+
+---
+
+## 17. Практическое мини-задание
 
 На бумаге / в заметках спроектируй Module 5 routes для своего проекта:
 
@@ -346,7 +376,7 @@ Modal можно оставить как доп. UX, но detail page через
 
 ---
 
-## 17. Мини-конспект
+## 18. Мини-конспект
 
 - Vue Router связывает URL и page components в SPA
 - без full reload между экранами
@@ -357,7 +387,7 @@ Modal можно оставить как доп. UX, но detail page через
 
 ---
 
-## 18. Что делать дальше
+## 19. Что делать дальше
 
 Следующий теоретический блок Module 5:
 

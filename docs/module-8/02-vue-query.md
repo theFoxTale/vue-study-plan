@@ -303,7 +303,37 @@ Fetch с пустым id → лишние 404.
 
 ---
 
-## 14. Практическое мини-задание
+## 14. Видео для этого блока
+
+`@tanstack/vue-query` делит модель с React Query: видео часто на React, **идеи переносятся** (queryKey, cache, staleTime). API смотри в Vue docs.
+
+### Рекомендуется
+
+1. **Tanner Linsley — TanStack ecosystem (React Universe On Air #50)**  
+   [YouTube](https://www.youtube.com/watch?v=2L4tlUIqLho)  
+   Автор TanStack: откуда взялся server-state mindset и зачем query library ≠ global store. Слушай куски про Query / server state.
+
+2. **Практический текст (must-read рядом с видео)**  
+   [TkDodo · Practical React Query](https://tkdodo.eu/blog/practical-react-query)  
+   Лучший «курс» по паттернам cache — применяй к `useQuery` во Vue один в один по смыслу.
+
+### Дополнительно
+
+3. **Eduardo — DejaVue · Pinia and Data Loaders**  
+   [YouTube](https://www.youtube.com/watch?v=dUztjolNZig)  
+   Как во Vue-экосистеме думают про loading data рядом с Pinia (границы Module 6 vs 8).
+
+### Короткий маршрут
+
+| Время | Что |
+|------|-----|
+| ~20 мин | TkDodo article (важнее длинного стрима) |
+| ~30–40 мин | куски Tanner про Query / server state |
+| практика | один `useQuery` на catalog list |
+
+---
+
+## 15. Практическое мини-задание
 
 1. Установи `@tanstack/vue-query`, подключи plugin
 2. Перепиши **один** экран (catalog list) с `useQuery`
@@ -313,7 +343,7 @@ Fetch с пустым id → лишние 404.
 
 ---
 
-## 15. Мини-конспект
+## 16. Мини-конспект
 
 - `@tanstack/vue-query` = server state cache + status API
 - `QueryClient` + `VueQueryPlugin` в main.ts
@@ -323,7 +353,7 @@ Fetch с пустым id → лишние 404.
 
 ---
 
-## 16. Что делать дальше
+## 17. Что делать дальше
 
 Следующий теоретический блок Module 8:
 

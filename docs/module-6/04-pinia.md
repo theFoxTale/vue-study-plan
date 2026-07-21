@@ -285,7 +285,37 @@ UI не обновляется — «Pinia сломалась».
 
 ---
 
-## 14. Практическое мини-задание
+## 14. Видео для этого блока
+
+Официальный Pinia Guide — must. Видео помогают увидеть anti-patterns и DevTools.
+
+### Рекомендуется
+
+1. **Eduardo San Martin Morote — Pinia Disasterclass (Vue.js Nation 2024)**  
+   [YouTube](https://www.youtube.com/watch?v=D61hGeliypY)  
+   Автор Pinia: типичные провалы (god store, wrong usage) и правильные паттерны — прямо про Module 6/13.
+
+2. **Eduardo — State, Routing, and the Future of Vue**  
+   [YouTube](https://www.youtube.com/watch?v=ng7JSla1Vaw)  
+   Как state и routing живут рядом в Vue-экосистеме.
+
+### Дополнительно
+
+3. **DejaVue #E030 — Pinia and Data Loaders (с Eduardo)**  
+   [YouTube](https://www.youtube.com/watch?v=dUztjolNZig)  
+   Подкаст: зачем Pinia, куда смотрит data-loading (полезно рядом с Module 8).
+
+### Короткий маршрут
+
+| Время | Что |
+|------|-----|
+| ~30–45 мин | Pinia Disasterclass |
+| + docs | [Pinia Getting Started](https://pinia.vuejs.org/getting-started.html) |
+| практика | `useCartStore` + DevTools Pinia tab |
+
+---
+
+## 15. Практическое мини-задание
 
 1. Установи `pinia`, подключи в `main.ts`
 2. Создай `src/stores/cart.ts` с пустым `items` и action `add`
@@ -295,7 +325,7 @@ UI не обновляется — «Pinia сломалась».
 
 ---
 
-## 15. Мини-конспект
+## 16. Мини-конспект
 
 - Pinia — официальный store для Vue (state / getters / actions)
 - `createPinia` → `app.use(pinia)` → `defineStore` → `useXxxStore()`
@@ -305,7 +335,7 @@ UI не обновляется — «Pinia сломалась».
 
 ---
 
-## 16. Что делать дальше
+## 17. Что делать дальше
 
 Следующий теоретический блок Module 6:
 

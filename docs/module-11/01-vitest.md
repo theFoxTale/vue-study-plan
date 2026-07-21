@@ -408,7 +408,36 @@ Split by module/feature.
 
 ---
 
-## 20. Практическое мини-задание
+## 20. Видео для этого блока
+
+Docs Vitest — must. Видео дают «почему Vite-native» и быстрый mental model.
+
+### Рекомендуется
+
+1. **Anthony Fu — Introduction to Vitest (Vue.js Nation 2022)**  
+   [YouTube](https://www.youtube.com/watch?v=CW9uTys0li0) · [слайды / пост](https://antfu.me/posts/introduction-to-vitest-vue-nation-2022)  
+   Создатель Vitest: зачем runner рядом с Vite, чем отличается от Jest mental model.
+
+2. **Anthony Fu × Learn With Jason — Fast Unit Testing With Vitest**  
+   [CodeTV / Learn With Jason](https://codetv.dev/series/learn-with-jason/s6/fast-unit-testing-with-vitest)  
+   Live-сессия: setup + первые тесты (длиннее lightning talk).
+
+### Дополнительно (философия, не Vue-only)
+
+3. **Kent C. Dodds — Write tests. Not too many. Mostly integration.** *(идеи)*  
+   Ищи запись talk / статью с тем же названием: behavior over implementation — стыкуется с [09 · testing philosophy](./09-testing-philosophy.md).
+
+### Короткий маршрут
+
+| Время | Что |
+|------|-----|
+| ~10–15 мин | Anthony Fu lightning talk |
+| + docs | [Vitest Guide](https://vitest.dev/guide/) |
+| практика | `*.test.ts` + `npm run test` |
+
+---
+
+## 21. Практическое мини-задание
 
 1. Install vitest + config
 2. `formatPrice.test.ts` or `loginSchema.safeParse` tests
@@ -418,7 +447,7 @@ Split by module/feature.
 
 ---
 
-## 21. Мини-конспект
+## 22. Мини-конспект
 
 - Vitest = Vite-native test runner, Jest-like API
 - colocate `*.test.ts` with source
@@ -429,7 +458,7 @@ Split by module/feature.
 
 ---
 
-## 22. Что делать дальше
+## 23. Что делать дальше
 
 Следующий теоретический блок Module 11:
 
