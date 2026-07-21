@@ -320,7 +320,7 @@
 - `axios` — [теория, vs fetch, instance, interceptors, response.data](docs/module-7/02-axios.md)
 - обработка ошибок — [теория, типы ошибок, AppError, UI messages, retry](docs/module-7/03-error-handling.md)
 - состояния `loading / error / success / empty` — [теория, state machine, empty vs error, soft loading](docs/module-7/04-async-ui-states.md)
-- пагинация
+- пагинация — [теория, page/limit/offset, totalPages, UI, async states](docs/module-7/05-pagination.md)
 - query params
 - отмена запросов
 - повторные запросы

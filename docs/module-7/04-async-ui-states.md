@@ -352,6 +352,4 @@ Async status живёт рядом с **server data** (page/composable), не в
 
 Следующий теоретический блок Module 7:
 
-- **пагинация**
-
-Разберём page/limit/offset (и cursor-идею) и как связать их с этими UI-состояниями.
+- [пагинация](./05-pagination.md)
