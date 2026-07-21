@@ -551,7 +551,7 @@
 - зачем нужен `Nuxt 3` — [теория, meta-framework, Nitro, DX, когда не нужен](docs/module-14/02-why-nuxt.md)
 - файловый роутинг — [теория, pages/, dynamic, nested, definePageMeta, NuxtLink](docs/module-14/03-file-routing.md)
 - layouts — [теория, NuxtLayout, default/named, vs nested pages, storefront](docs/module-14/04-layouts.md)
-- pages
+- pages — [теория, тонкий page, data/SEO/middleware, keys, 404, Module 13](docs/module-14/05-pages.md)
 - `useFetch`
 - `useAsyncData`
 - server routes
