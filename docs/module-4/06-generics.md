@@ -463,6 +463,6 @@ Generics — инструмент переиспользования types, не
 
 Следующий теоретический блок Module 4:
 
-- **работа с типами в store и router**
+- **[`работа с типами в store и router`](./07-types-in-store-and-router.md)**
 
 Даже если Pinia/Router ещё не в центре практики, полезно понять, **как типизируются stores, routes и navigation** заранее — это мост к Module 5–6.
