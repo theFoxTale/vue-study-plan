@@ -417,7 +417,7 @@
 
 ### Теория
 
-- `Teleport`
+- `Teleport` — [теория, body/modal-root, modal/toast, z-index, a11y overview](docs/module-10/01-teleport.md)
 - `Suspense`
 - transitions
 - custom directives

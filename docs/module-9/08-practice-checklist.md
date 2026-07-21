@@ -386,8 +386,8 @@ Module 9 можно считать завершённым, если:
 
 Переходи к **Module 10 · Переиспользуемый UI и продвинутые возможности Vue**:
 
-- `Teleport`, `Suspense`, transitions
-- custom directives
+- [Teleport](../module-10/01-teleport.md)
+- Suspense, transitions, directives
 - composables для modal, dropdown, tabs, notifications
 
 Формы готовы — Module 10 улучшит **modal dialogs**, **toasts** и переиспользуемый UI вокруг них.
