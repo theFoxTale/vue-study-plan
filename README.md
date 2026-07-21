@@ -356,7 +356,7 @@
 - queries — [теория, query keys factory, filters, enabled, select, dependent](docs/module-8/03-queries.md)
 - mutations — [теория, useMutation, mutateAsync, forms, vs Pinia](docs/module-8/04-mutations.md)
 - invalidation — [теория, invalidateQueries, setQueryData, removeQueries, factory keys](docs/module-8/05-invalidation.md)
-- optimistic updates
+- optimistic updates — [теория, onMutate, rollback, cancelQueries, когда уместно](docs/module-8/06-optimistic-updates.md)
 - retries
 - cache lifecycle
 

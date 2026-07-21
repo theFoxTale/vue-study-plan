@@ -404,5 +404,3 @@ Catalog и admin form используют один composable — invalidate н
 Следующий теоретический блок Module 8:
 
 - [optimistic updates](./06-optimistic-updates.md)
-
-Разберём `onMutate`, rollback, `cancelQueries`, мгновенный UI до ответа API.
