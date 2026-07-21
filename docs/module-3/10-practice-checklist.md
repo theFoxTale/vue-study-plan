@@ -514,7 +514,8 @@ Module 3 можно считать завершённым, если:
 
 Переходи к **Module 4 · TypeScript во Vue**:
 
-- typing props/emits
+- [типизация props](../module-4/01-typing-props.md)
+- typing emits
 - generics в components *(по мере необходимости)*
 - более строгие models для product/filters
 

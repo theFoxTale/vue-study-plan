@@ -214,7 +214,7 @@
 
 ### Теория
 
-- типизация props
+- типизация props — [теория, type-based vs runtime, `withDefaults`, models, ссылки](docs/module-4/01-typing-props.md)
 - типизация emits
 - типизация composables
 - интерфейсы и type aliases
