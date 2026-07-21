@@ -317,7 +317,7 @@
 ### Теория
 
 - `fetch` — [теория, Response, ok, JSON, api module, vs Pinia data](docs/module-7/01-fetch.md)
-- `axios`
+- `axios` — [теория, vs fetch, instance, interceptors, response.data](docs/module-7/02-axios.md)
 - обработка ошибок
 - состояния `loading / error / success / empty`
 - пагинация

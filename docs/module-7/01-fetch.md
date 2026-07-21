@@ -350,6 +350,4 @@ Throw чаще на network fail / CORS; HTTP status — через `ok`.
 
 Следующий теоретический блок Module 7:
 
-- **`axios`**
-
-Сравним с `fetch`: API instance, interceptors-идея, когда axios удобнее.
+- [`axios`](./02-axios.md)
