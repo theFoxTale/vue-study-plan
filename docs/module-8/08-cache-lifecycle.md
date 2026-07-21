@@ -401,6 +401,4 @@ Data никогда не обновится без invalidate. Забыл invali
 
 Теория Module 8 завершена. Переходи к практике:
 
-- [Module 8 · practice checklist](./09-practice-checklist.md)
-
-Перепиши API-часть catalog на vue-query: list + detail + mutation + invalidation + cache, который решает реальную задачу.
+- [Module 8 · practice checklist](./09-practice-checklist.md) — list + detail + mutation + invalidation + cache с реальной пользой

@@ -352,6 +352,7 @@ Module 7 можно считать завершённым, если:
 - [отличие server state от client state](../module-8/01-server-state-vs-client-state.md)
 - `@tanstack/vue-query`
 - queries, mutations, invalidation
+- [практический checklist Module 8](../module-8/09-practice-checklist.md) *(после теории)*
 
 Module 8 перепишет **ту же** catalog-часть с cache toolkit — Module 7 manual flow должен быть понятен до этого.
 
