@@ -416,6 +416,7 @@ Module 12 можно считать завершённым, если:
 - [структура папок](../module-13/01-folder-structure.md)
 - feature-based, `shared/ui/entities/features/pages`
 - API / composables / stores layers, env
+- [практический checklist Module 13](../module-13/10-practice-checklist.md) *(после теории)*
 
 Perf fixes без структуры **расползаются** — Module 13 закрепляет **где** живёт код catalog.
 

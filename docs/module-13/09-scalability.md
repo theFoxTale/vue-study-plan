@@ -326,6 +326,4 @@ ARCHITECTURE.md
 
 Теория Module 13 завершена. Переходи к практике:
 
-- [Module 13 · practice checklist](./10-practice-checklist.md)
-
-Переразложи catalog в слои (или упрощённый аналог) и зафиксируй короткие архитектурные правила.
+- [Module 13 · practice checklist](./10-practice-checklist.md) — слои + ARCHITECTURE.md, build/tests green
