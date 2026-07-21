@@ -376,5 +376,3 @@ Background scroll behind modal.
 Следующий теоретический блок Module 10:
 
 - [Suspense](./02-suspense.md)
-
-Разберём async components, `#default` / `#fallback`, loading boundaries.
