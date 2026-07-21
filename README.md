@@ -481,7 +481,7 @@
 
 ### Теория
 
-- как работает реактивность под капотом
+- как работает реактивность под капотом — [теория, Proxy, track/trigger, ref/reactive, computed, effect scope](docs/module-12/01-reactivity-internals.md)
 - лишние перерендеры
 - значение `key`
 - `v-once`

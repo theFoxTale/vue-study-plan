@@ -365,8 +365,8 @@ Module 11 можно считать завершённым, если:
 
 Переходи к **Module 12 · Производительность**:
 
-- реактивность, лишние rerenders
-- `v-memo`, `shallowRef`, code splitting
+- [реактивность под капотом](../module-12/01-reactivity-internals.md)
+- лишние rerenders, `v-memo`, `shallowRef`, code splitting
 - Vue Devtools profiling
 
 Tests дают safety net — Module 12 оптимизирует **измеримые** узкие места.
