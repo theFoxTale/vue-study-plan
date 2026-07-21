@@ -519,7 +519,7 @@
 - shared/ui/entities/features/pages — [теория, слои, зависимости, tie-break, public API](docs/module-13/03-shared-ui-entities-features-pages.md)
 - подходы к naming — [теория, компоненты, composables, stores, query keys, anti-patterns](docs/module-13/04-naming.md)
 - слой API — [теория, http client, entity endpoints, parse, vue-query boundary](docs/module-13/05-api-layer.md)
-- слой composables
+- слой composables — [теория, placement по слоям, vs Pinia, god-composable, cleanup](docs/module-13/06-composables-layer.md)
 - слой stores
 - работа с `env`
 - базовые принципы масштабируемости
