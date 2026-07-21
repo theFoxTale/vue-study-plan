@@ -285,7 +285,7 @@
 - `provide/inject` — [теория, props drilling, readonly API, InjectionKey, vs Pinia](docs/module-6/02-provide-inject.md)
 - когда store не нужен — [теория, лестница решений, ложные поводы, composable ≠ store](docs/module-6/03-when-store-is-not-needed.md)
 - `Pinia` — [теория, установка, defineStore, storeToRefs, vs DIY global](docs/module-6/04-pinia.md)
-- `state`
+- `state` — [теория, initial state, $patch, $reset, типизация](docs/module-6/05-state.md)
 - `getters`
 - `actions`
 - setup stores
