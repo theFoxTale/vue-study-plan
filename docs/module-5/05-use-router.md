@@ -387,6 +387,4 @@ Params молча игнорируются.
 
 Следующий теоретический блок Module 5:
 
-- **`useRoute`**
-
-Разберём чтение `params`, `query`, `path`, `name` и реакцию на смену route.
+- [`useRoute`](./06-use-route.md)

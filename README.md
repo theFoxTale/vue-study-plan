@@ -251,7 +251,7 @@
 - `RouterLink` — [теория, to, named routes, active classes, replace](docs/module-5/03-router-link.md)
 - `RouterView` — [теория, outlet, layout shell, Transition, nested preview](docs/module-5/04-router-view.md)
 - `useRouter` — [теория, push/replace/back, vs RouterLink, Promise](docs/module-5/05-use-router.md)
-- `useRoute`
+- `useRoute` — [теория, params/query/name, watch, vs useRouter](docs/module-5/06-use-route.md)
 - динамические маршруты
 - nested routes
 - redirects
