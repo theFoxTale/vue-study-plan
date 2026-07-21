@@ -432,5 +432,3 @@ Use in `CatalogPage.spec.ts`, store tests, etc.
 Следующий теоретический блок Module 11:
 
 - [базовый e2e-подход](./08-e2e-intro.md)
-
-Playwright или Cypress — когда unit/component недостаточно.
