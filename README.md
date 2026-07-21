@@ -351,7 +351,7 @@
 
 ### Теория
 
-- отличие server state от client state
+- отличие server state от client state — [теория, stale cache, Pinia vs Query, границы](docs/module-8/01-server-state-vs-client-state.md)
 - `@tanstack/vue-query`
 - queries
 - mutations

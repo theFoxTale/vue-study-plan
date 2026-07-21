@@ -349,7 +349,7 @@ Module 7 можно считать завершённым, если:
 
 Переходи к **Module 8 · Server State и кеширование**:
 
-- отличие server state от client state
+- [отличие server state от client state](../module-8/01-server-state-vs-client-state.md)
 - `@tanstack/vue-query`
 - queries, mutations, invalidation
 
