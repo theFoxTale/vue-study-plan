@@ -517,7 +517,7 @@
 - структура папок — [теория, type vs feature, app/pages/features/entities/shared](docs/module-13/01-folder-structure.md)
 - feature-based organization — [теория, границы feature, public API, cart/auth/catalog](docs/module-13/02-feature-based.md)
 - shared/ui/entities/features/pages — [теория, слои, зависимости, tie-break, public API](docs/module-13/03-shared-ui-entities-features-pages.md)
-- подходы к naming
+- подходы к naming — [теория, компоненты, composables, stores, query keys, anti-patterns](docs/module-13/04-naming.md)
 - слой API
 - слой composables
 - слой stores
