@@ -439,5 +439,3 @@ E2E doesn't replace fast feedback loop.
 Следующий теоретический блок Module 11:
 
 - [что тестировать и behavior vs implementation](./09-testing-philosophy.md)
-
-Scope, ROI, anti-patterns — закрыть теорию перед practice checklist.

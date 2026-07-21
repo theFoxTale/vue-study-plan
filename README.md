@@ -455,8 +455,8 @@
 - тестирование store — [теория, Pinia, setActivePinia, cart/auth actions, getters](docs/module-11/06-store-testing.md)
 - мокирование API — [теория, vi.spyOn, vi.mock, fixtures, MSW overview](docs/module-11/07-api-mocking.md)
 - базовый e2e-подход через `Playwright` или `Cypress` — [теория, pyramid, Playwright setup, catalog flows](docs/module-11/08-e2e-intro.md)
-- что стоит тестировать, а что нет
-- тестирование поведения, а не деталей реализации
+- что стоит тестировать, а что нет — [теория, ROI, pyramid, critical scenarios](docs/module-11/09-testing-philosophy.md)
+- тестирование поведения, а не деталей реализации — [теория, behavior vs implementation, refactor-friendly tests](docs/module-11/09-testing-philosophy.md)
 
 ### Практика
 
