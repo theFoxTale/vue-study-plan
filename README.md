@@ -515,7 +515,7 @@
 ### Теория
 
 - структура папок — [теория, type vs feature, app/pages/features/entities/shared](docs/module-13/01-folder-structure.md)
-- feature-based organization
+- feature-based organization — [теория, границы feature, public API, cart/auth/catalog](docs/module-13/02-feature-based.md)
 - shared/ui/entities/features/pages
 - подходы к naming
 - слой API
