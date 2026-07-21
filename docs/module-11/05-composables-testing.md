@@ -456,5 +456,3 @@ Module 11 practice — минимум:
 Следующий теоретический блок Module 11:
 
 - [тестирование store](./06-store-testing.md)
-
-Разберём Pinia testing, actions, getters, cart/auth store.

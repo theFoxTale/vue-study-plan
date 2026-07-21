@@ -452,7 +452,7 @@
 - unit tests — [теория, pure fn, schemas, parse, fixtures, AAA](docs/module-11/03-unit-tests.md)
 - component tests — [теория, mount flows, forms, query, stubs, catalog MVP](docs/module-11/04-component-tests.md)
 - тестирование composables — [теория, withSetup, useModal/useToast, shared state](docs/module-11/05-composables-testing.md)
-- тестирование store
+- тестирование store — [теория, Pinia, setActivePinia, cart/auth actions, getters](docs/module-11/06-store-testing.md)
 - мокирование API
 - базовый e2e-подход через `Playwright` или `Cypress`
 - что стоит тестировать, а что нет
