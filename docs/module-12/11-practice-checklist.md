@@ -413,14 +413,11 @@ Module 12 можно считать завершённым, если:
 
 Переходи к **Module 13 · Архитектура проекта**:
 
-- feature-based folders
-- `shared/ui/entities/features/pages`
-- API / composables / stores layers
-- env и правила масштабирования
+- [структура папок](../module-13/01-folder-structure.md)
+- feature-based, `shared/ui/entities/features/pages`
+- API / composables / stores layers, env
 
 Perf fixes без структуры **расползаются** — Module 13 закрепляет **где** живёт код catalog.
-
-- [Module 13 в README](../../README.md#module-13-архитектура-проекта)
 
 ---
 

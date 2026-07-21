@@ -514,7 +514,7 @@
 
 ### Теория
 
-- структура папок
+- структура папок — [теория, type vs feature, app/pages/features/entities/shared](docs/module-13/01-folder-structure.md)
 - feature-based organization
 - shared/ui/entities/features/pages
 - подходы к naming
