@@ -553,7 +553,7 @@
 - layouts — [теория, NuxtLayout, default/named, vs nested pages, storefront](docs/module-14/04-layouts.md)
 - pages — [теория, тонкий page, data/SEO/middleware, keys, 404, Module 13](docs/module-14/05-pages.md)
 - `useFetch` — [теория, SSR payload, key/watch, lazy, $fetch, vs vue-query](docs/module-14/06-use-fetch.md)
-- `useAsyncData`
+- `useAsyncData` — [теория, key + handler, aggregate, api layer, vs useFetch](docs/module-14/07-use-async-data.md)
 - server routes
 - SEO basics
 - deployment basics
