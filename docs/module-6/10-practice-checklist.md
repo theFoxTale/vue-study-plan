@@ -364,7 +364,8 @@ Module 6 можно считать завершённым, если:
 
 Переходи к **Module 7 · Работа с сервером**:
 
-- `fetch` / `axios`
+- [`fetch`](../module-7/01-fetch.md)
+- `axios`
 - loading / error / success / empty
 - pagination, abort, retries
 - когда нужен отдельный data layer

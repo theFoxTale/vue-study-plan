@@ -316,7 +316,7 @@
 
 ### Теория
 
-- `fetch`
+- `fetch` — [теория, Response, ok, JSON, api module, vs Pinia data](docs/module-7/01-fetch.md)
 - `axios`
 - обработка ошибок
 - состояния `loading / error / success / empty`
