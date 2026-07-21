@@ -388,7 +388,7 @@
 - кастомные поля — [теория, FormField, BaseInput, a11y, error hooks](docs/module-9/02-custom-fields.md)
 - controlled patterns во Vue-терминах — [теория, values/errors/touched, submit flow](docs/module-9/03-controlled-patterns.md)
 - `VeeValidate` — [теория, useForm, defineField, handleSubmit, TextField](docs/module-9/04-veevalidate.md)
-- `Zod`
+- `Zod` — [теория, schema, toTypedSchema, z.infer, reuse api/form](docs/module-9/05-zod.md)
 - синхронная и асинхронная валидация
 - формы авторизации, профиля, checkout flow
 

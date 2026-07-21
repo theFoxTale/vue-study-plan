@@ -534,5 +534,3 @@ const [email, emailAttrs, emailMeta] = defineField('email')
 Следующий теоретический блок Module 9:
 
 - [Zod](./05-zod.md)
-
-Разберём schema, `@vee-validate/zod`, `toTypedSchema`, один источник правил.
