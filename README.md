@@ -485,7 +485,7 @@
 - лишние перерендеры — [теория, parent/child, unstable props, Pinia/query, diagnose](docs/module-12/02-unnecessary-rerenders.md)
 - значение `key` — [теория, v-for identity, index anti-pattern, router/TransitionGroup](docs/module-12/03-key.md)
 - `v-once` — [теория, static subtree, freeze, vs v-memo, catalog footer](docs/module-12/04-v-once.md)
-- `v-memo`
+- `v-memo` — [теория, deps array, v-for lists, vs v-once, stale UI traps](docs/module-12/05-v-memo.md)
 - `shallowRef`
 - code splitting
 - lazy components
