@@ -389,7 +389,7 @@
 - controlled patterns во Vue-терминах — [теория, values/errors/touched, submit flow](docs/module-9/03-controlled-patterns.md)
 - `VeeValidate` — [теория, useForm, defineField, handleSubmit, TextField](docs/module-9/04-veevalidate.md)
 - `Zod` — [теория, schema, toTypedSchema, z.infer, reuse api/form](docs/module-9/05-zod.md)
-- синхронная и асинхронная валидация
+- синхронная и асинхронная валидация — [теория, blur/submit, async unique, 422, debounce](docs/module-9/06-sync-async-validation.md)
 - формы авторизации, профиля, checkout flow
 
 ### Практика
