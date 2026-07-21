@@ -345,6 +345,4 @@ const routes = [
 
 Следующий теоретический блок Module 5:
 
-- **navigation guards**
-
-Разберём `beforeEach`, `beforeEnter`, per-route meta и отмену/redirect навигации.
+- [navigation guards](./10-navigation-guards.md)

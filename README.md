@@ -255,7 +255,7 @@
 - динамические маршруты — [теория, :id, reuse, props, catch-all 404](docs/module-5/07-dynamic-routes.md)
 - nested routes — [теория, children, nested RouterView, layouts, default child](docs/module-5/08-nested-routes.md)
 - redirects — [теория, redirect vs alias, function redirect, replace](docs/module-5/09-redirects.md)
-- navigation guards
+- navigation guards — [теория, beforeEach, meta, beforeEnter, leave/update](docs/module-5/10-navigation-guards.md)
 - lazy loading routes
 
 ### Практика
