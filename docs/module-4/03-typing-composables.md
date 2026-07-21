@@ -547,6 +547,6 @@ loadProducts: () => Promise<void> // лучше
 
 Следующий теоретический блок Module 4:
 
-- **интерфейсы и type aliases**
+- **[`интерфейсы и type aliases`](./04-interfaces-and-type-aliases.md)**
 
 Нужно уверенно выбирать `interface` vs `type`, строить union/intersection models и не плодить дубли в `src/types`.
