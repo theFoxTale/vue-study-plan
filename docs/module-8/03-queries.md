@@ -349,6 +349,4 @@ Page 2 перезаписывает cache page 1.
 
 Следующий теоретический блок Module 8:
 
-- **mutations**
-
-Разберём `useMutation`, POST/PATCH, связку с forms и onSuccess.
+- [mutations](./04-mutations.md)

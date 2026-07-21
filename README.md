@@ -354,7 +354,7 @@
 - отличие server state от client state — [теория, stale cache, Pinia vs Query, границы](docs/module-8/01-server-state-vs-client-state.md)
 - `@tanstack/vue-query` — [теория, QueryClient, useQuery, queryKey, vs Module 7](docs/module-8/02-vue-query.md)
 - queries — [теория, query keys factory, filters, enabled, select, dependent](docs/module-8/03-queries.md)
-- mutations
+- mutations — [теория, useMutation, mutateAsync, forms, vs Pinia](docs/module-8/04-mutations.md)
 - invalidation
 - optimistic updates
 - retries
