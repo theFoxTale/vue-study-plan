@@ -368,6 +368,4 @@ Params — identity; query — options list screen.
 
 Следующий теоретический блок Module 7:
 
-- **отмена запросов**
-
-Разберём `AbortController`, гонки при смене `page`/`q` и когда не показывать abort как error.
+- [отмена запросов](./07-request-cancellation.md)
