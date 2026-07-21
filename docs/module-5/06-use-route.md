@@ -397,6 +397,4 @@ Route — read model. Меняй URL через `router.push` / `replace`.
 
 Следующий теоретический блок Module 5:
 
-- **динамические маршруты**
-
-Разберём `:id`, optional params, catch-all `NotFound` и связку с detail page.
+- [динамические маршруты](./07-dynamic-routes.md)

@@ -252,7 +252,7 @@
 - `RouterView` — [теория, outlet, layout shell, Transition, nested preview](docs/module-5/04-router-view.md)
 - `useRouter` — [теория, push/replace/back, vs RouterLink, Promise](docs/module-5/05-use-router.md)
 - `useRoute` — [теория, params/query/name, watch, vs useRouter](docs/module-5/06-use-route.md)
-- динамические маршруты
+- динамические маршруты — [теория, :id, reuse, props, catch-all 404](docs/module-5/07-dynamic-routes.md)
 - nested routes
 - redirects
 - navigation guards
