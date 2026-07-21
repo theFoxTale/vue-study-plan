@@ -455,6 +455,4 @@ Deep links ломаются при deploy в subfolder.
 
 Следующий теоретический блок Module 5:
 
-- **`RouterLink`**
-
-После рабочего router instance разберём правильные SPA-ссылки вместо обычных `<a>`.
+- [`RouterLink`](./03-router-link.md)
