@@ -321,7 +321,7 @@
 - обработка ошибок — [теория, типы ошибок, AppError, UI messages, retry](docs/module-7/03-error-handling.md)
 - состояния `loading / error / success / empty` — [теория, state machine, empty vs error, soft loading](docs/module-7/04-async-ui-states.md)
 - пагинация — [теория, page/limit/offset, totalPages, UI, async states](docs/module-7/05-pagination.md)
-- query params
+- query params — [теория, route.query vs API params, filters, parse, reset page](docs/module-7/06-query-params.md)
 - отмена запросов
 - повторные запросы
 - когда хватает обычного `fetch`, а когда нужен отдельный data layer
