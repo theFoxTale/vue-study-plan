@@ -388,6 +388,7 @@ Module 13 можно считать завершённым, если:
 - [CSR / SSR / SSG / hybrid](../module-14/01-csr-ssr-ssg-hybrid.md)
 - когда Nuxt нужен, а когда Vue + Vite достаточно
 - file routing, layouts, `useFetch` / `useAsyncData`
+- [практический checklist Module 14](../module-14/12-practice-checklist.md) *(после теории)*
 
 Архитектура Module 13 **переносится** в Nuxt слоями (`pages/`, `components/`, `composables/`, server) — границы важнее названий папок.
 

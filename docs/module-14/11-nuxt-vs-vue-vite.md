@@ -294,6 +294,4 @@ God `pages/` на любом фреймворке.
 
 Теория Module 14 завершена. Переходи к практике:
 
-- [Module 14 · practice checklist](./12-practice-checklist.md)
-
-Собери маленький Nuxt 3 проект (контент / blog / docs / storefront) и зафиксируй, почему выбран Nuxt.
+- [Module 14 · practice checklist](./12-practice-checklist.md) — Nuxt MVP + SEO/prerender + Why Nuxt

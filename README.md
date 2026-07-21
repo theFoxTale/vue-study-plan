@@ -563,6 +563,7 @@
 
 - небольшой проект на `Nuxt 3`
 - контентный сайт, блог, docs-like app или storefront
+- [практический checklist](docs/module-14/12-practice-checklist.md)
 
 ### Что должно получиться
 
