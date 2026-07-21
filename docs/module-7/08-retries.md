@@ -321,6 +321,4 @@ async function load(filters: CatalogFilters) {
 
 Следующий (последний теоретический) блок Module 7:
 
-- **когда хватает обычного `fetch`, а когда нужен отдельный data layer**
-
-Соберём границы api / composable / store / Vue Query preview.
+- [когда хватает `fetch`, а когда нужен data layer](./09-data-layer.md)

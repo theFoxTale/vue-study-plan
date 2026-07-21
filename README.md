@@ -324,7 +324,7 @@
 - query params — [теория, route.query vs API params, filters, parse, reset page](docs/module-7/06-query-params.md)
 - отмена запросов — [теория, AbortController, race conditions, signal, unmount](docs/module-7/07-request-cancellation.md)
 - повторные запросы — [теория, user vs auto-retry, retryable errors, backoff](docs/module-7/08-retries.md)
-- когда хватает обычного `fetch`, а когда нужен отдельный data layer
+- когда хватает обычного `fetch`, а когда нужен отдельный data layer — [теория, api/composable/store, client vs server](docs/module-7/09-data-layer.md)
 
 ### Практика
 
