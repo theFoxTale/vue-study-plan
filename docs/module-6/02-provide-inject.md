@@ -310,6 +310,4 @@ provide/inject отлично для:
 
 Следующий теоретический блок Module 6:
 
-- **когда store не нужен**
-
-Закрепим decision framework: local / provide / URL / composable / Pinia — и типичные ложные поводы завести store.
+- [когда store не нужен](./03-when-store-is-not-needed.md)
