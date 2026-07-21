@@ -518,7 +518,7 @@
 - feature-based organization — [теория, границы feature, public API, cart/auth/catalog](docs/module-13/02-feature-based.md)
 - shared/ui/entities/features/pages — [теория, слои, зависимости, tie-break, public API](docs/module-13/03-shared-ui-entities-features-pages.md)
 - подходы к naming — [теория, компоненты, composables, stores, query keys, anti-patterns](docs/module-13/04-naming.md)
-- слой API
+- слой API — [теория, http client, entity endpoints, parse, vue-query boundary](docs/module-13/05-api-layer.md)
 - слой composables
 - слой stores
 - работа с `env`
