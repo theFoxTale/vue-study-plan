@@ -486,7 +486,7 @@
 - значение `key` — [теория, v-for identity, index anti-pattern, router/TransitionGroup](docs/module-12/03-key.md)
 - `v-once` — [теория, static subtree, freeze, vs v-memo, catalog footer](docs/module-12/04-v-once.md)
 - `v-memo` — [теория, deps array, v-for lists, vs v-once, stale UI traps](docs/module-12/05-v-memo.md)
-- `shallowRef`
+- `shallowRef` — [теория, shallow vs deep, triggerRef, markRaw, immutable lists](docs/module-12/06-shallow-ref.md)
 - code splitting
 - lazy components
 - оптимизация загрузки страниц
