@@ -874,6 +874,14 @@ Playgrounds, starters и внешние демо: [docs/DEMOS.md](docs/DEMOS.md)
 
 Краткая шпаргалка Vue 3 по плану: [docs/CHEATSHEET.md](docs/CHEATSHEET.md)
 
+Проверка внутренних markdown-ссылок (локально / CI):
+
+```bash
+npm run check:links
+```
+
+Workflow: [`.github/workflows/check-md-links.yml`](.github/workflows/check-md-links.yml)
+
 ## Русскоязычные ресурсы
 
 - Vue 3 официальный перевод: <https://ru.vuejs.org/>

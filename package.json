@@ -1,0 +1,11 @@
+{
+  "name": "vue-study-plan",
+  "private": true,
+  "description": "Modern Vue study plan (documentation only)",
+  "scripts": {
+    "check:links": "node scripts/check-md-links.mjs"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
