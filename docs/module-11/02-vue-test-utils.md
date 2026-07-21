@@ -480,5 +480,3 @@ Prefer role / testid / visible text.
 Следующий теоретический блок Module 11:
 
 - [unit tests](./03-unit-tests.md)
-
-Разберём что относится к unit слою, структуру, Zod/utils/composables без DOM.
