@@ -460,8 +460,9 @@ Validation и submit logic должны жить в `<script setup>`.
 
 Следующий шаг — **практика Module 1**:
 
-- `Todo List`
-- `Notes App`
-- `Habit Tracker`
+- [практический checklist](./14-practice-checklist.md)
+- pet-projects: `Todo List` · `Notes App` · `Habit Tracker`
 
 Выбери один pet-project и собери его, используя всё изученное: SFC, interpolation, events, directives и forms.
+
+Дополнительно: [DEMOS.md](../DEMOS.md) · [RESOURCES.md](../RESOURCES.md)
