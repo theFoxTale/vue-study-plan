@@ -546,6 +546,6 @@ export type Product = {
 
 Следующий теоретический блок Module 4:
 
-- **типизация emits**
+- **[`типизация emits`](./02-typing-emits.md)**
 
 Props описывают input types. Emits описывают **output event payload types** — вторая половина строгого component API.
