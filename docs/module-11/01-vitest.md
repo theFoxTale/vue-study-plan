@@ -434,5 +434,3 @@ Split by module/feature.
 Следующий теоретический блок Module 11:
 
 - [Vue Test Utils](./02-vue-test-utils.md)
-
-Разберём `mount`, `shallowMount`, queries, events, testing Vue components.

@@ -448,7 +448,7 @@
 ### Теория
 
 - `Vitest` — [теория, setup, config, describe/expect, colocated tests](docs/module-11/01-vitest.md)
-- `Vue Test Utils`
+- `Vue Test Utils` — [теория, mount, queries, events, plugins, stubs](docs/module-11/02-vue-test-utils.md)
 - unit tests
 - component tests
 - тестирование composables
