@@ -223,7 +223,7 @@ Nested modals — редко; лучше replace content одного modal.
 </template>
 ```
 
-Mount `ToastContainer` once в `App.vue`; composable `useToast()` push messages — [урок 07](./07-ui-patterns.md).
+Mount `ToastContainer` once в `App.vue`; composable `useToast()` push messages — [урок 06](./06-ui-patterns.md).
 
 ---
 
@@ -279,7 +279,7 @@ watch(open, (isOpen) => {
 | Teleport | almost always `body` | often yes, if overflow clip |
 | Backdrop | full screen | optional |
 | Focus | trap | return on outside click |
-| Module 10 | BaseModal | BaseDropdown *(урок 07)* |
+| Module 10 | BaseModal | BaseDropdown *(урок 06)* |
 
 Menu в header catalog filters — Teleport если parent `overflow: hidden`.
 
