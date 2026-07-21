@@ -5,7 +5,7 @@
 Связанные материалы:
 
 - [Module 8 · queries](./03-queries.md)
-- [Module 7 · axios](./02-axios.md)
+- [Module 7 · axios](../module-7/02-axios.md)
 - [Module 6 · actions](../module-6/07-actions.md)
 
 ---

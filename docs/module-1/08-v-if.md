@@ -4,7 +4,7 @@
 
 Связанные материалы:
 
-- [05 · интерполяция](05-interpolation.md)
+- [07 · v-bind](07-v-bind.md)
 - [09 · v-show](09-v-show.md)
 
 ---
@@ -94,7 +94,59 @@ const isLoggedIn = ref(false)
 
 ---
 
-## 8. Мини-конспект
+## 8. Что важно понять после этого блока
+
+Проверь себя:
+
+1. Что происходит с элементом в DOM при `v-if="false"`?
+2. Можно ли поставить `v-else` через другой элемент после `v-if`?
+3. Когда лучше `v-if`, а когда достаточно ternary в `{{ }}`?
+4. Чем `v-if` отличается от `v-show` *(следующий урок)*?
+
+---
+
+## 9. Что почитать
+
+### Официальное
+
+- [Conditional Rendering](https://vuejs.org/guide/essentials/conditional.html)
+- [RU · Условный рендеринг](https://ru.vuejs.org/guide/essentials/conditional.html)
+
+### Playground / доп. ресурсы
+
+- [Vue SFC Playground](https://play.vuejs.org/) — loading / error / success через `v-if` / `v-else-if` / `v-else`
+- [DEMOS.md](../DEMOS.md) · [RESOURCES.md](../RESOURCES.md)
+
+---
+
+## 10. Практическое мини-задание
+
+Сделай todo snippet:
+
+```vue
+<script setup lang="ts">
+import { ref } from 'vue'
+
+const todos = ref<{ id: number; text: string }[]>([])
+</script>
+
+<template>
+  <p v-if="todos.length === 0">No todos yet</p>
+  <ul v-else>
+    <li v-for="todo in todos" :key="todo.id">{{ todo.text }}</li>
+  </ul>
+</template>
+```
+
+Задачи:
+
+1. Временно добавь 1–2 todo в `ref([...])` и сравни DOM
+2. Добавь ветку `v-else-if` для «слишком много todos» (`length > 5`)
+3. Тот же пример — в [play.vuejs.org](https://play.vuejs.org/)
+
+---
+
+## 11. Мини-конспект
 
 - `v-if` добавляет или удаляет элемент из DOM
 - есть `v-else` и `v-else-if`
@@ -102,13 +154,8 @@ const isLoggedIn = ref(false)
 
 ---
 
-## 9. Практика
+## 12. Что делать дальше
 
-Сделай todo app snippet:
+Следующий теоретический блок Module 1:
 
-```vue
-<p v-if="todos.length === 0">No todos yet</p>
-<ul v-else>
-  <li v-for="todo in todos" :key="todo.id">{{ todo.text }}</li>
-</ul>
-```
+- [`v-show`](./09-v-show.md)

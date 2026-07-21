@@ -18,6 +18,8 @@
 
 Если `false`, элемент остаётся в DOM, но получает `display: none`.
 
+Официально: [Conditional Rendering · v-show](https://vuejs.org/guide/essentials/conditional.html#v-show)
+
 ---
 
 ## 2. Базовый пример
@@ -73,7 +75,57 @@ const isOpen = ref(true)
 
 ---
 
-## 7. Мини-конспект
+## 7. Что важно понять после этого блока
+
+Проверь себя:
+
+1. Остаётся ли элемент в DOM при `v-show="false"`?
+2. Когда `v-show` выгоднее `v-if`?
+3. Почему у `v-show` нет `v-else`?
+4. Стоит ли `v-show` на тяжёлом chart-компоненте, который почти никогда не открывают?
+
+---
+
+## 8. Что почитать
+
+### Официальное
+
+- [Conditional Rendering · v-show](https://vuejs.org/guide/essentials/conditional.html#v-show)
+- [RU · v-show](https://ru.vuejs.org/guide/essentials/conditional.html#v-show)
+
+### Playground / доп. ресурсы
+
+- [Vue SFC Playground](https://play.vuejs.org/) — сравни `v-if` vs `v-show` на одном toggle
+- [DEMOS.md](../DEMOS.md) · [RESOURCES.md](../RESOURCES.md)
+
+---
+
+## 9. Практическое мини-задание
+
+Сделай collapsible block:
+
+```vue
+<script setup lang="ts">
+import { ref } from 'vue'
+
+const isOpen = ref(true)
+</script>
+
+<template>
+  <button type="button" @click="isOpen = !isOpen">Toggle</button>
+  <div v-show="isOpen">Hidden content</div>
+</template>
+```
+
+Задачи:
+
+1. В Elements посмотри `display: none` при закрытии
+2. Замени на `v-if` и сравни: узел исчезает из DOM
+3. Тот же эксперимент — в [play.vuejs.org](https://play.vuejs.org/)
+
+---
+
+## 10. Мини-конспект
 
 - `v-show` = toggle visibility через CSS
 - элемент остаётся в DOM
@@ -81,13 +133,8 @@ const isOpen = ref(true)
 
 ---
 
-## 8. Практика
+## 11. Что делать дальше
 
-Сделай collapsible block:
+Следующий теоретический блок Module 1:
 
-```vue
-<button @click="isOpen = !isOpen">Toggle</button>
-<div v-show="isOpen">Hidden content</div>
-```
-
-Сравни поведение с `v-if` на таком же примере.
+- [`v-for`](./10-v-for.md)

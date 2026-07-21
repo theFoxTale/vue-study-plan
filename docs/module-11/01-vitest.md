@@ -369,7 +369,7 @@ Need `environment: 'jsdom'` for DOM tests.
 
 ### Testing implementation: `expect(wrapper.vm.internalCounter)`
 
-Test visible behavior — [урок 09](./09-behavior-vs-implementation.md).
+Test visible behavior — [урок 09 · testing philosophy](./09-testing-philosophy.md).
 
 ### Flaky async without await
 

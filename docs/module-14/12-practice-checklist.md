@@ -323,13 +323,13 @@ Module 14 можно считать завершённым, если:
 
 Переходи к **Module 15 · Финальный проект**:
 
+- [практический checklist](../module-15/01-practice-checklist.md)
 - Vue 3 + TS + Router + Pinia + API + forms + tests + a11y + README + deploy
-- выбери вариант (ecommerce, dashboard, …)
-- стек: Vite SPA **или** Nuxt — по требованиям SEO/HTML (урок 11)
+- стек: Vite SPA **или** Nuxt — по требованиям SEO/HTML ([урок 11](./11-nuxt-vs-vue-vite.md))
+
+Также: [RESOURCES](../RESOURCES.md) · [DEMOS](../DEMOS.md)
 
 Module 14 дал вторую опору: **когда** выносить витрину на Nuxt.
-
-- [Module 15 в README](../../README.md#module-15-финальный-проект)
 
 ---
 

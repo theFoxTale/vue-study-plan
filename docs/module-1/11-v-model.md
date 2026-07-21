@@ -6,6 +6,7 @@
 
 - [06 · события](06-events.md)
 - [07 · v-bind](07-v-bind.md)
+- [10 · v-for](10-v-for.md)
 
 ---
 
@@ -129,7 +130,72 @@ const isDone = ref(false)
 
 ---
 
-## 10. Мини-конспект
+## 10. Что важно понять после этого блока
+
+Проверь себя:
+
+1. Чем `v-model` отличается от одного `:value`?
+2. Что roughly делает `v-model` под капотом на `<input>`?
+3. Зачем `.trim` и `.number`?
+4. Почему на form нужен `@submit.prevent`?
+
+---
+
+## 11. Что почитать
+
+### Официальное
+
+- [Form Input Bindings](https://vuejs.org/guide/essentials/forms.html)
+- [RU · Привязка форм](https://ru.vuejs.org/guide/essentials/forms.html)
+- [v-model modifiers](https://vuejs.org/guide/essentials/forms.html#modifiers)
+
+### Playground / доп. ресурсы
+
+- [Vue SFC Playground](https://play.vuejs.org/) — input + checkbox + `{{ title }}`
+- [Vue Examples · Form](https://vuejs.org/examples/#form-bindings) *(если доступен в доке)*
+- [DEMOS.md](../DEMOS.md) · [RESOURCES.md](../RESOURCES.md)
+
+---
+
+## 12. Практическое мини-задание
+
+Сделай mini form:
+
+```vue
+<script setup lang="ts">
+import { ref } from 'vue'
+
+const title = ref('')
+const todos = ref<string[]>([])
+
+function addTodo() {
+  const value = title.value.trim()
+  if (!value) return
+  todos.value.push(value)
+  title.value = ''
+}
+</script>
+
+<template>
+  <form @submit.prevent="addTodo">
+    <input v-model.trim="title" placeholder="Todo title" />
+    <button type="submit">Add</button>
+  </form>
+  <ul>
+    <li v-for="(t, i) in todos" :key="i">{{ t }}</li>
+  </ul>
+</template>
+```
+
+Задачи:
+
+1. Проверь, что пустой submit ничего не добавляет
+2. Добавь checkbox `v-model` «Agree» и блокируй submit, пока false
+3. Тот же пример — в [play.vuejs.org](https://play.vuejs.org/)
+
+---
+
+## 13. Мини-конспект
 
 - `v-model` = two-way binding
 - идеален для input, textarea, checkbox, select
@@ -137,13 +203,8 @@ const isDone = ref(false)
 
 ---
 
-## 11. Практика
+## 14. Что делать дальше
 
-Сделай mini form:
+Следующий теоретический блок Module 1:
 
-```vue
-<input v-model.trim="title" />
-<button @click="addTodo">Add</button>
-```
-
-После submit очищай `title`.
+- [`v-on`](./12-v-on.md) *(шпаргалка; детали уже в [06 · события](./06-events.md))*

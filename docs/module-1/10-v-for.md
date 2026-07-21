@@ -104,7 +104,67 @@ const todos = [
 
 ---
 
-## 8. Мини-конспект
+## 8. Что важно понять после этого блока
+
+Проверь себя:
+
+1. Зачем `:key` в списке?
+2. Почему `id` лучше `index` при delete/reorder?
+3. Как показать empty state вместе с `v-for`?
+4. Можно ли `v-for` на компоненте?
+
+---
+
+## 9. Что почитать
+
+### Официальное
+
+- [List Rendering](https://vuejs.org/guide/essentials/list.html)
+- [Maintaining State with `key`](https://vuejs.org/guide/essentials/list.html#maintaining-state-with-key)
+- [RU · Рендеринг списков](https://ru.vuejs.org/guide/essentials/list.html)
+
+### Playground / доп. ресурсы
+
+- [Vue SFC Playground](https://play.vuejs.org/) — список + add/remove + `:key`
+- [DEMOS.md](../DEMOS.md) · [RESOURCES.md](../RESOURCES.md)
+- позже глубже: [Module 12 · key](../module-12/03-key.md)
+
+---
+
+## 10. Практическое мини-задание
+
+Сделай список notes:
+
+```vue
+<script setup lang="ts">
+import { ref } from 'vue'
+
+const notes = ref([
+  { id: 1, title: 'Vue' },
+  { id: 2, title: 'Vite' },
+])
+</script>
+
+<template>
+  <p v-if="notes.length === 0">No notes yet</p>
+  <ul v-else>
+    <li v-for="note in notes" :key="note.id">
+      {{ note.title }}
+    </li>
+  </ul>
+</template>
+```
+
+Задачи:
+
+1. Добавь кнопку, которая `push` новую note с новым `id`
+2. Добавь удаление первой note — ключи остаются корректными?
+3. Намеренно поставь `:key="index"` и сравни поведение после delete
+4. Воспроизведи в [play.vuejs.org](https://play.vuejs.org/)
+
+---
+
+## 11. Мини-конспект
 
 - `v-for="item in items"`
 - `:key` обязателен для списков
@@ -112,16 +172,8 @@ const todos = [
 
 ---
 
-## 9. Практика
+## 12. Что делать дальше
 
-Сделай список notes:
+Следующий теоретический блок Module 1:
 
-```vue
-<ul>
-  <li v-for="note in notes" :key="note.id">
-    {{ note.title }}
-  </li>
-</ul>
-```
-
-Добавь empty state через `v-if`.
+- [`v-model`](./11-v-model.md)
