@@ -282,7 +282,7 @@
 ### Теория
 
 - локальное состояние vs глобальное — [теория, этажи state, URL vs store, anti god-store](docs/module-6/01-local-vs-global-state.md)
-- `provide/inject`
+- `provide/inject` — [теория, props drilling, readonly API, InjectionKey, vs Pinia](docs/module-6/02-provide-inject.md)
 - когда store не нужен
 - `Pinia`
 - `state`

@@ -324,6 +324,4 @@ Lift state up ≠ app store.
 
 Следующий теоретический блок Module 6:
 
-- **`provide/inject`**
-
-Разберём dependency injection в дереве компонентов без props drilling и без store.
+- [`provide/inject`](./02-provide-inject.md)
