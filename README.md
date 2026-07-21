@@ -386,7 +386,7 @@
 
 - сложный `v-model` — [теория, defineModel, named models, modifiers, object model](docs/module-9/01-complex-v-model.md)
 - кастомные поля — [теория, FormField, BaseInput, a11y, error hooks](docs/module-9/02-custom-fields.md)
-- controlled patterns во Vue-терминах
+- controlled patterns во Vue-терминах — [теория, values/errors/touched, submit flow](docs/module-9/03-controlled-patterns.md)
 - `VeeValidate`
 - `Zod`
 - синхронная и асинхронная валидация
