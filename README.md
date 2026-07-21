@@ -548,7 +548,7 @@
 ### Теория
 
 - `CSR`, `SSR`, `SSG`, hybrid rendering — [теория, сравнение, hydration, storefront map](docs/module-14/01-csr-ssr-ssg-hybrid.md)
-- зачем нужен `Nuxt 3`
+- зачем нужен `Nuxt 3` — [теория, meta-framework, Nitro, DX, когда не нужен](docs/module-14/02-why-nuxt.md)
 - файловый роутинг
 - layouts
 - pages
