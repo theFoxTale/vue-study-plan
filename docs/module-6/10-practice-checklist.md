@@ -365,10 +365,10 @@ Module 6 можно считать завершённым, если:
 Переходи к **Module 7 · Работа с сервером**:
 
 - [`fetch`](../module-7/01-fetch.md)
-- `axios`
+- [практический checklist Module 7](../module-7/10-practice-checklist.md) *(после теории)*
 - loading / error / success / empty
 - pagination, abort, retries
-- когда нужен отдельный data layer
+- data layer
 
 Stores уже есть — Module 7 научит **не превращать Pinia в единственный HTTP-слой**.
 
