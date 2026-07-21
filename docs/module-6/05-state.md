@@ -306,6 +306,4 @@ UI «застыл».
 
 Следующий теоретический блок Module 6:
 
-- **`getters`**
-
-Разберём computed-значения store, аргументы getters и компоновку из другого store.
+- [`getters`](./06-getters.md)

@@ -286,7 +286,7 @@
 - когда store не нужен — [теория, лестница решений, ложные поводы, composable ≠ store](docs/module-6/03-when-store-is-not-needed.md)
 - `Pinia` — [теория, установка, defineStore, storeToRefs, vs DIY global](docs/module-6/04-pinia.md)
 - `state` — [теория, initial state, $patch, $reset, типизация](docs/module-6/05-state.md)
-- `getters`
+- `getters` — [теория, computed store, this, параметры, другие stores](docs/module-6/06-getters.md)
 - `actions`
 - setup stores
 - best practices проектирования store
