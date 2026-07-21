@@ -472,5 +472,3 @@ Unit should need **few or zero** mocks.
 Следующий теоретический блок Module 11:
 
 - [component tests](./04-component-tests.md)
-
-Разберём сценарии mount, forms, async data, user flows на уровне компонента.

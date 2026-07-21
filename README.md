@@ -450,7 +450,7 @@
 - `Vitest` — [теория, setup, config, describe/expect, colocated tests](docs/module-11/01-vitest.md)
 - `Vue Test Utils` — [теория, mount, queries, events, plugins, stubs](docs/module-11/02-vue-test-utils.md)
 - unit tests — [теория, pure fn, schemas, parse, fixtures, AAA](docs/module-11/03-unit-tests.md)
-- component tests
+- component tests — [теория, mount flows, forms, query, stubs, catalog MVP](docs/module-11/04-component-tests.md)
 - тестирование composables
 - тестирование store
 - мокирование API
