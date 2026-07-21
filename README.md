@@ -521,7 +521,7 @@
 - слой API — [теория, http client, entity endpoints, parse, vue-query boundary](docs/module-13/05-api-layer.md)
 - слой composables — [теория, placement по слоям, vs Pinia, god-composable, cleanup](docs/module-13/06-composables-layer.md)
 - слой stores — [теория, Pinia placement, vs query/composable, god store, actions](docs/module-13/07-stores-layer.md)
-- работа с `env`
+- работа с `env` — [теория, VITE_, shared/config, secrets, modes, typed env](docs/module-13/08-env.md)
 - базовые принципы масштабируемости
 
 ### Практика
