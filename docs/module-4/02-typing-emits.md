@@ -560,6 +560,6 @@ export type ProductFiltersEmits = {
 
 Следующий теоретический блок Module 4:
 
-- **типизация composables**
+- **[`типизация composables`](./03-typing-composables.md)**
 
 После typed components логично типизировать reusable logic: что composable принимает и что возвращает.
