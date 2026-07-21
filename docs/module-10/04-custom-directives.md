@@ -414,5 +414,3 @@ export function registerDirectives(app: App) {
 Следующий теоретический блок Module 10:
 
 - [composables как слой переиспользования](./05-composables-reuse-layer.md)
-
-Разберём `useModal`, `useToast`, API design, когда выносить logic из components.
