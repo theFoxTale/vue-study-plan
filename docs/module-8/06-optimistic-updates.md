@@ -349,5 +349,3 @@ Runtime error. Invalidate lists.
 Следующий теоретический блок Module 8:
 
 - [retries](./07-retries.md)
-
-Разберём `retry`, `retryDelay`, отличие query retries от mutation, связь с Module 7.

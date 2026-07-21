@@ -357,7 +357,7 @@
 - mutations — [теория, useMutation, mutateAsync, forms, vs Pinia](docs/module-8/04-mutations.md)
 - invalidation — [теория, invalidateQueries, setQueryData, removeQueries, factory keys](docs/module-8/05-invalidation.md)
 - optimistic updates — [теория, onMutate, rollback, cancelQueries, когда уместно](docs/module-8/06-optimistic-updates.md)
-- retries
+- retries — [теория, retry/retryDelay, query vs mutation, refetch, vs Module 7](docs/module-8/07-retries.md)
 - cache lifecycle
 
 ### Практика
