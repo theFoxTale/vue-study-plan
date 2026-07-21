@@ -526,5 +526,3 @@ Minimum for Module 11 practice:
 Следующий теоретический блок Module 11:
 
 - [тестирование composables](./05-composables-testing.md)
-
-Разберём `withSetup`, lifecycle, `useModal`, `useToast`, `useDisclosure`.
