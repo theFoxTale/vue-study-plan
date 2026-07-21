@@ -397,6 +397,4 @@ router.push({ name: 'product-details', params: { id: 1 } })
 
 Следующий теоретический блок Module 5:
 
-- **nested routes**
-
-Разберём parent/children, вложенный `RouterView` и layout-роуты.
+- [nested routes](./08-nested-routes.md)

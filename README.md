@@ -253,7 +253,7 @@
 - `useRouter` — [теория, push/replace/back, vs RouterLink, Promise](docs/module-5/05-use-router.md)
 - `useRoute` — [теория, params/query/name, watch, vs useRouter](docs/module-5/06-use-route.md)
 - динамические маршруты — [теория, :id, reuse, props, catch-all 404](docs/module-5/07-dynamic-routes.md)
-- nested routes
+- nested routes — [теория, children, nested RouterView, layouts, default child](docs/module-5/08-nested-routes.md)
 - redirects
 - navigation guards
 - lazy loading routes
