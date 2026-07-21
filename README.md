@@ -489,7 +489,7 @@
 - `shallowRef` — [теория, shallow vs deep, triggerRef, markRaw, immutable lists](docs/module-12/06-shallow-ref.md)
 - code splitting — [теория, dynamic import, chunks, vendor split, build analyze](docs/module-12/07-code-splitting.md)
 - lazy components — [теория, defineAsyncComponent, Suspense, tabs/modals, loading UX](docs/module-12/08-lazy-components.md)
-- оптимизация загрузки страниц
+- оптимизация загрузки страниц — [теория, LCP/CLS/INP, images, fonts, query waterfall](docs/module-12/09-page-load-optimization.md)
 - `Vue Devtools`
 
 ### Практика
