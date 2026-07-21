@@ -219,7 +219,7 @@
 - типизация composables — [теория, `Ref`/`ComputedRef`, return contracts, catalog examples, ссылки](docs/module-4/03-typing-composables.md)
 - интерфейсы и type aliases — [теория, `interface` vs `type`, unions, `Pick`/`Omit`, ссылки](docs/module-4/04-interfaces-and-type-aliases.md)
 - типизация API-ответов — [теория, DTO vs domain, `unknown`, parse/guards, ссылки](docs/module-4/05-typing-api-responses.md)
-- generics в прикладных сценариях
+- generics в прикладных сценариях — [теория, `ApiResponse<T>`, `fetchJson`, constraints, ссылки](docs/module-4/06-generics.md)
 - работа с типами в store и router
 
 ### Практика
