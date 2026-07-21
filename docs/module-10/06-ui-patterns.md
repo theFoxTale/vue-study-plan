@@ -554,6 +554,4 @@ Split BaseModal, BaseDropdown, …
 
 Теория Module 10 завершена. Переходи к практике:
 
-- [Module 10 · practice checklist](./07-practice-checklist.md)
-
-Собери 3–5 UI elements и integration page в catalog app.
+- [Module 10 · practice checklist](./07-practice-checklist.md) — 3–5 UI elements, modal + toast на catalog
