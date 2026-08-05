@@ -1,375 +1,691 @@
 # Backend plan — Java · Spring Boot · PostgreSQL
 
 Учебный трек для self-taught backend-разработчика на **Java**.  
-Продукт тот же — **FlowBoard** ([README](README.md), полное ТЗ: [product-spec.md](product-spec.md)), контракт тот же — [api-contract.md](api-contract.md).
+Продукт: **FlowBoard** — [README](README.md) · [product-spec.md](product-spec.md) · [api-contract.md](api-contract.md).
 
 Альтернатива на Go: [backend-go-plan.md](backend-go-plan.md).
 
----
-
-## Стартовая точка (важно)
-
-| Курс | Статус |
-|------|--------|
-| [JavaRush «Java»](https://javarush.com/courses/java) | **Java Syntax** завершён |
-| [JavaRush «Java 25»](https://javarush.com/courses/java25) | Раздел **«ООП и современные возможности»**, урок **5 · Интерфейсы** |
-
-Значит: синтаксис уже есть, ООП в процессе, до Spring/SQL ещё рано «прыгать с двух ног».  
-План ниже **не заменяет** JavaRush — он идёт **параллельно**: после каждого блока JR — маленькое упражнение для FlowBoard.
-
-### Что добить в Java 25 до «уверенного Spring»
-
-| Раздел JR Java 25 | Зачем для FlowBoard |
-|-------------------|---------------------|
-| Интерфейсы → продвинутые интерфейсы / functional | Репозитории, сервисы, `Comparator`, колбэки |
-| Records | DTO / API-модели без бойлерплейта |
-| ООП mistakes + exceptions | Чистый домен, нормальные ошибки |
-| Git/GitHub (конец OOP-блока) | Совместная работа с фронтом |
-| **Коллекции и Stream API** | Списки задач, фильтры, группировки |
-| Файлы / JSON (хотя бы JSON) | Понимание сериализации до Spring |
-| Лямбды | Streams, Spring callbacks |
-
-Многопоточность / Virtual Threads / модули — **после** первых REST+DB вех (или фоном).
-
-Полезные следующие курсы JR (когда дойдёте):
-
-- [Spring in Practice](https://javarush.com/courses/spring-in-practice) — REST, JPA, Security, JWT, PostgreSQL  
-- [Spring in Production](https://javarush.com/courses/spring-in-production) — тесты, Testcontainers, Docker  
+План **не заменяет** JavaRush: JR даёт теорию и автопроверку задач, FlowBoard — сквозной pet-project под портфолио и общий API с Vue.
 
 ---
 
-## Карта модулей
+## 1. Стартовая точка
 
-| # | Тема | Сложность | Параллель с JR |
-|---|------|-----------|----------------|
-| [J0](#j0--добить-ооп-интерфейсы--records) | OOP: interfaces → records | ★☆☆☆☆ | Сейчас → конец «ООП…» |
-| [J1](#j1--коллекции-и-домен-flowboard-в-памяти) | Collections + domain | ★★☆☆☆ | «Коллекции и Stream API» |
-| [J2](#j2--сборка-проекта-и-spring-boot-hello) | Maven/Gradle + Boot | ★★☆☆☆ | После коллекций (можно раньше) |
-| [J3](#j3--rest-api-без-бд) | REST in-memory | ★★☆☆☆ | Spring Web |
-| [J4](#j4--postgresql--миграции--jdbc) | Postgres + SQL + JDBC | ★★★☆☆ | SQL с нуля |
-| [J5](#j5--spring-data-jpa-crud-projects) | JPA Projects CRUD | ★★★☆☆ | Spring Data JPA |
-| [J6](#j6--spring-security--jwt) | Auth JWT | ★★★★☆ | Spring Security |
-| [J7](#j7--tasks-фильтры-пагинация) | Tasks + queries | ★★★★☆ | JPQL / Specifications |
-| [J8](#j8--теги-many-to-many) | Tags M2M | ★★★★☆ | `@ManyToMany` |
-| [J9](#j9--комментарии-ошибки-cors) | Comments + API polish | ★★★★☆ | ExceptionHandler, validation |
-| [J10](#j10--тесты-docker-деплой) | Tests + Docker | ★★★★★ | Spring in Production |
+| Курс | Ссылка | Статус сейчас |
+|------|--------|----------------|
+| Java (классический) | https://javarush.com/courses/java | **Java Syntax** завершён |
+| Java 25 | https://javarush.com/courses/java25 | Раздел **«ООП и современные возможности»**, урок **Интерфейсы** (5-й в блоке) |
 
-Ориентир по срокам: **12–16 недель** спокойнее, чем Go-трек — часть времени уходит на JR.
+### Как читать два курса JavaRush
 
----
+| Курс | Роль в этом плане |
+|------|-------------------|
+| **[Java 25](https://javarush.com/courses/java25)** | **Основной** язык/ООП/коллекции/современный синтаксис |
+| **[Java](https://javarush.com/courses/java)** (Syntax уже сдан) | **Опционально** догонять **Java Core** / **Collections**, если хочется больше задач на интерфейсы и коллекции «по-старому» |
+| **[Spring in Practice](https://javarush.com/courses/spring-in-practice)** | **Основной** Spring: REST → JPA → Security/JWT |
+| **[Spring in Production](https://javarush.com/courses/spring-in-production)** | Финал: тесты, Hibernate deep dive, Docker |
 
-## J0 · Добить ООП (Interfaces → Records)
-
-### Цель
-Уверенно пользоваться интерфейсами, абстракцией, records — языком «контрактов», как в API.
-
-### Упражнение (параллельно JR)
-1. Закончить JR: Interfaces → Advanced interfaces → Records → OOP best practices.
-2. Свой мини-домен **без Spring**:
-   - `interface TaskRepository { List<Task> findAll(); void save(Task t); }`
-   - `class InMemoryTaskRepository implements TaskRepository`
-   - `record Task(String id, String title, String status) {}`
-3. Консольное меню: add / list / set status.
-
-### Готово, когда
-- Можешь объяснить: интерфейс vs абстрактный класс; зачем `record`.
-- Реализацию репозитория можно заменить другой — вызовы кода не ломаются.
-
-### Материалы
-- JR: [Java 25 · OOP](https://javarush.com/courses/java25)
-- [Oracle: Interfaces](https://docs.oracle.com/javase/tutorial/java/IandI/createinterface.html)
-- [JEP 395: Records](https://openjdk.org/jeps/395)
-- [Effective Java (Bloch)](https://www.oracle.com/java/technologies/effectivejava.html) — главы про interfaces/immutability (по желанию)
+> Рекомендация: после Syntax **не обязательно** проходить весь классический Java до конца, если Java 25 идёт нормально. Classic **Java Core** (интерфейсы, приведение типов) — хороший доп.практикум к J0.
 
 ---
 
-## J1 · Коллекции и домен FlowBoard в памяти
+## 2. Карта: JavaRush → модули FlowBoard
 
-### Цель
-`List` / `Map` / `Set`, generics, Stream — фильтры задач «как в API», но без HTTP.
+```mermaid
+flowchart LR
+  subgraph JR_Java25 [Java 25]
+    OOP[ООП: Interfaces → Records]
+    Col[Коллекции и Stream]
+    JSON[Файлы / JSON]
+    Lam[Лямбды]
+  end
 
-### Упражнение
-1. Пройти JR «Коллекции и Stream API» (хотя бы до уверенных Stream basics).
-2. Модели: `User`, `Project`, `Task`, `Tag` (пока классы/records).
-3. Сервис `TaskService`:
-   - фильтр по `status`, `priority`;
-   - поиск по title (`q`);
-   - группировка `Map<String, Long>` count by status.
-4. Написать 5–10 unit-тестов на сервис (**JUnit 5**) — даже без Spring.
+  subgraph JR_Spring [Spring JR]
+    REST[Spring REST and MVC]
+    JPA[Spring Data JPA]
+    SEC[Spring Security]
+    PROD[Spring in Production]
+  end
 
-### Готово, когда
-- Фильтры работают на коллекциях;
-- Есть тесты `./gradlew test` или Maven equivalent;
-- Понимаешь `Optional`, `equals/hashCode` для entity-ключей.
+  subgraph FB [FlowBoard]
+    J0[J0]
+    J1[J1]
+    J2[J2 health]
+    J3[J3 REST memory]
+    J4[J4 JDBC]
+    J5[J5 JPA]
+    J6[J6 JWT]
+    J7[J7 Tasks]
+    J8[J8 Tags]
+    J9[J9 Comments]
+    J10[J10 Docker]
+  end
 
-### Материалы
-- JR: Collections & Stream API (Java 25)
-- [Oracle Collections tutorial](https://docs.oracle.com/javase/tutorial/collections/)
-- [Stream API (Oracle)](https://docs.oracle.com/javase/8/docs/api/java/util/stream/package-summary.html)
-- [JUnit 5 User Guide](https://junit.org/junit5/docs/current/user-guide/)
+  OOP --> J0
+  Col --> J1
+  Lam --> J1
+  JSON --> J3
+  REST --> J2
+  REST --> J3
+  JPA --> J4
+  JPA --> J5
+  JPA --> J7
+  JPA --> J8
+  SEC --> J6
+  REST --> J9
+  PROD --> J10
+```
+
+| FlowBoard | JavaRush (что закрыть / параллельно) |
+|-----------|--------------------------------------|
+| **J0** | Java 25 · OOP: Interfaces → … → Records → Git |
+| **J1** | Java 25 · Коллекции и Stream API (+ лямбды по возможности) |
+| **J2–J3** | Spring in Practice · **Spring REST & MVC** |
+| **J4–J5, J7–J8** | Spring in Practice · **Spring Data JPA** (+ SQL refresher внутри курса) |
+| **J6** | Spring in Practice · **Spring Security** (до JWT) |
+| **J9** | REST: validation, `@ControllerAdvice`, CORS (из REST & Security) |
+| **J10** | Spring in Production · tests + Docker |
 
 ---
 
-## J2 · Сборка проекта и Spring Boot Hello
+## 3. Календарь (ориентир 14–16 недель)
 
-### Цель
-Собрать runnable backend-скелет, понять DI «на пальцах».
+Темп: **~1–2 уровня JR / будни** + **FlowBoard 2–4 вечера / неделю**.
 
-### Упражнение
-1. JDK **21** или **25** (LTS/удобная версия под курс).
-2. Spring Boot 3.x через [start.spring.io](https://start.spring.io/):
-   - dependencies: Spring Web, Validation, PostgreSQL (пока можно не использовать), Flyway (позже).
-3. `GET /health` → `{ "status": "ok" }`.
-4. `application.yml` + profile `dev`.
-5. README: как запустить.
+| Недели | JavaRush | FlowBoard | Совместный результат |
+|--------|----------|-----------|----------------------|
+| 1–2 | Добить OOP-блок Java 25 (с Interfaces) | **J0** | Консольный домен + interface repo |
+| 3–5 | Коллекции + Stream (+ лямбды) | **J1** | In-memory фильтры задач + JUnit |
+| 6 | Старт Spring in Practice · REST (первые уровни) | **J2** | `GET /health` |
+| 7–8 | REST & MVC: controllers, DTO, errors, CRUD | **J3** | Projects CRUD in-memory по контракту |
+| 9 | Data JPA: SQL refresher + Postgres + Flyway intro | **J4** | Projects на JDBC + миграции |
+| 10 | Data JPA: entity, repository, relations | **J5** | Projects на JPA + ownership prep |
+| 11–12 | Security → JWT | **J6** | Register/Login/Me + защита routes |
+| 13 | Data JPA: Page, filter, ManyToMany | **J7 + J8** | Tasks + tags |
+| 14 | REST polish + Security CORS/errors | **J9** | Comments + единые ошибки |
+| 15–16 | Spring in Production (выборочно) | **J10** | Tests + compose + demo с Vue |
 
-### Готово, когда
-- Приложение стартует одной командой;
-- Понимаешь `@RestController`, `@GetMapping`, `@SpringBootApplication`.
-
-### Материалы
-- [Spring Boot Getting Started](https://spring.io/guides/gs/spring-boot/)
-- [Building a RESTful Web Service](https://spring.io/guides/gs/rest-service/)
-- [start.spring.io](https://start.spring.io/)
-- IntelliJ + JR plugin (уже из курса)
+Если JR идёт медленнее — **не ускорять Spring**. Лучше сдвинуть календарь, чем получить «скопированный» Boot без понимания.
 
 ---
 
-## J3 · REST API без БД
+## 4. Модули J0–J10 (подробно)
 
-### Цель
-Те же endpoints, что у Go-трека на этапе B2: CRUD projects in-memory.
+Каждый модуль: **JR-уроки** → **теория вне JR** → **упражнение FlowBoard** → **DoD** → **что скинуть фронту**.
 
-### Упражнение
-Реализовать по [api-contract.md](api-contract.md):
+---
+
+### J0 · Добить ООП (Interfaces → Records)
+
+**Сложность:** ★☆☆☆☆ · **Срок:** 1–2 недели
+
+#### JavaRush — пройти по порядку
+
+Из [Java 25 · «ООП и современные возможности»](https://javarush.com/courses/java25) (ты уже на «Интерфейсы»):
+
+| # в блоке | Урок / тема JR | Зачем в FlowBoard |
+|-----------|----------------|-------------------|
+| 1–4 | Nested classes → Inheritance → Polymorphism → Abstract classes | *(уже позади / повторить если дыры)* |
+| **5** | **Интерфейсы** ← ты здесь | Контракт `TaskRepository` |
+| 6 | Продвинутые интерфейсы и functional interfaces (Java 8+) | `Comparator`, будущие колбэки Spring |
+| 7 | Record-классы (Java 16+) | DTO / value objects |
+| 8 | ООП — типичные ошибки и best practices | Чистый дизайн |
+| 9 | Продвинутая работа с исключениями | Свои `NotFoundException` и т.п. |
+| 10 | Контроль версий: Git и GitHub | Репозиторий `flowboard-api-java` |
+
+**Опционально classic Java:**  
+[Java Core](https://javarush.com/courses/java) — уровни про интерфейсы / `instanceof` / большая задача на интерфейсы — как доп.задачник к J0.
+
+#### Упражнение FlowBoard (без Spring)
+
+Пакет, например `com.flowboard.console`:
+
+```text
+domain/
+  Task.java          // record Task(String id, String title, String status) {}
+  Project.java
+repository/
+  TaskRepository.java          // interface
+  InMemoryTaskRepository.java  // implements
+service/
+  TaskService.java             // add, list, setStatus
+app/
+  Main.java                    // меню Scanner: 1 add / 2 list / 3 status
+```
+
+Мини-правила:
+
+- статусы только `todo|doing|done` (иначе исключение);
+- id — `UUID.randomUUID().toString()`;
+- `TaskService` зависит от **интерфейса**, не от класса.
+
+#### DoD
+
+- [ ] JR-уроки 5–10 OOP-блока закрыты (или почти; Git можно параллельно)
+- [ ] Можно заменить `InMemoryTaskRepository` на другую реализацию без правок `TaskService`
+- [ ] Объясняешь вслух: interface vs abstract class; зачем record
+- [ ] Репо на GitHub создан
+
+#### Отдать фронту
+
+Пока ничего HTTP. Можно скинуть скрин консоли / README «домен готов».
+
+---
+
+### J1 · Коллекции и домен FlowBoard в памяти
+
+**Сложность:** ★★☆☆☆ · **Срок:** 2–3 недели
+
+#### JavaRush
+
+[Java 25 · «Коллекции и Stream API»](https://javarush.com/courses/java25):
+
+| Урок / тема JR | Практика в FlowBoard |
+|----------------|----------------------|
+| Коллекции и generics | `List<Task>`, `Map<String, Project>` |
+| Интерфейсы коллекций | Выбор `ArrayList` vs `HashSet` для тегов |
+| Работа с коллекциями | CRUD в памяти |
+| Компараторы | Сортировка по `due_date`, priority |
+| Основы Stream API | filter / map |
+| Stream: группировка и агрегация | count by status |
+| Stream: объединения и проекции | join task+tag names (упрощённо) |
+| Оптимизация / modern collections | `List.copyOf`, unmodifiable (по желанию) |
+
+Параллельно полезен блок **«Лямбда и события»** (3 уровня) — лямбды для Stream.
+
+**Опционально classic:** [Java Collections](https://javarush.com/courses/java) — углубление коллекций / JSON-знакомство.
+
+#### Упражнение
+
+Расширить консольный/модульный проект:
+
+1. Модели из [product-spec.md](product-spec.md): User, Project, Task, Tag (пока без БД).
+2. `TaskQuery` record: `status`, `priority`, `q`, `tag`.
+3. `TaskService.find(projectId, query)` на Stream.
+4. `DashboardService`: overdue / dueToday / counts.
+5. **JUnit 5**: ≥ 8 тестов (фильтры, пустой результат, неверный status).
+
+Билд: простой Maven/Gradle **без** Spring пока можно.
+
+#### DoD
+
+- [ ] Закрыт блок Collections (хотя бы до уверенного Stream filter/groupBy)
+- [ ] Фильтры совпадают по смыслу с query params контракта
+- [ ] `./mvnw test` или `./gradlew test` зелёный
+- [ ] Понимаешь `Optional`, `equals/hashCode` для id
+
+#### Отдать фронту
+
+Описание доменных полей (можно markdown-таблицу) — сверить с контрактом.
+
+---
+
+### J2 · Spring Boot Hello
+
+**Сложность:** ★★☆☆☆ · **Срок:** ~1 неделя (можно раньше, если Collections уже ок)
+
+#### JavaRush
+
+Старт [Spring in Practice · Spring REST & MVC](https://javarush.com/courses/spring-in-practice):
+
+- позиционирование курса / сквозной Task Tracker API *(у JR свой учебный проект — **не копируй его endpoints**, делай FlowBoard по нашему контракту)*;
+- HTTP глазами backend-разработчика;
+- первые уровни про Spring MVC request handling.
+
+Параллельно официальные гайды (ниже).
+
+#### Упражнение
+
+1. JDK **21** (или 25 под курс).  
+2. [start.spring.io](https://start.spring.io/): Spring Web, Validation, Actuator (опц.).  
+3. Репозиторий `flowboard-api-java`.  
+4. `GET /health` → `{ "status": "ok" }` (как в контракте).  
+5. `application-dev.yml`, README.
+
+```text
+com.flowboard
+  FlowboardApplication.java
+  web.HealthController.java
+```
+
+#### DoD
+
+- [ ] Приложение стартует одной командой
+- [ ] Postman/`curl` → 200 JSON
+- [ ] Понимаешь `@SpringBootApplication`, `@RestController`, `@GetMapping`
+
+#### Материалы вне JR
+
+- https://spring.io/guides/gs/spring-boot/
+- https://spring.io/guides/gs/rest-service/
+- https://start.spring.io/
+
+#### Отдать фронту
+
+URL `http://localhost:8080/health` — первая интеграция «API online».
+
+---
+
+### J3 · REST API без БД (Projects)
+
+**Сложность:** ★★☆☆☆ · **Срок:** 1–2 недели
+
+#### JavaRush — Spring REST & MVC (целевые темы)
+
+Иди по курсу, **сразу перенося** идеи в FlowBoard:
+
+| Тема в Spring in Practice (REST) | Сделать в FlowBoard |
+|----------------------------------|---------------------|
+| URI, карта endpoints | Сверить с [api-contract.md](api-contract.md) |
+| path / query / body | Projects CRUD |
+| Архитектура: controller → service → in-memory repo | Как в product-spec §5 |
+| DTO ≠ внутренняя модель | `ProjectResponse`, `CreateProjectRequest` (records) |
+| Jackson / JSON | Сериализация ответов |
+| Bean Validation | `@NotBlank` на name |
+| `@ControllerAdvice` / error contract | Формат `{ "error": { "code", "message" } }` |
+| Pagination envelopes (пока можно упростить) | Заложить `items` + `meta` |
+| POST/PUT/PATCH/DELETE | Для projects: POST + PATCH + DELETE |
+| `@WebMvcTest` / MockMvc | 3–5 тестов controller |
+
+> JR местами учит на своём Task Tracker — **эндпоинты и JSON бери только из нашего контракта**.
+
+#### Упражнение (обязательный scope)
+
 - `GET/POST /api/v1/projects`
 - `GET/PATCH/DELETE /api/v1/projects/{id}`
-- Единый error body `{ "error": { "code", "message" } }`
-- `@Valid` + DTO records
-- `@ControllerAdvice` для ошибок
+- In-memory store (`ConcurrentHashMap`)
+- Пока без JWT: заголовок-заглушка `X-User-Id` **или** один hardcode user (документировать в README)
+- Единые ошибки: `not_found`, `validation_error`
 
-Пока **без auth** (добавите в J6) — либо заглушка `X-User-Id` для обучения.
+#### DoD
 
-### Готово, когда
-- CRUD через Postman/`curl`;
-- 400/404 отдаются в формате контракта;
-- Controllers тонкие, логика в `@Service`.
+- [ ] CRUD проходит Postman-чек лист
+- [ ] Controller тонкий, логика в service
+- [ ] Ошибки в формате контракта
+- [ ] Хотя бы несколько MockMvc-тестов
 
-### Материалы
-- [Spring REST guide](https://spring.io/guides/gs/rest-service/)
-- [Building REST services with Spring](https://spring.io/guides/tutorials/rest/)
-- [Validation](https://docs.spring.io/spring-framework/reference/core/validation/beanvalidation.html)
-- [Problem Details / error handling overview](https://www.baeldung.com/exception-handling-for-rest-with-spring)
+#### Отдать фронту
+
+Работающий projects API (можно без auth) + пример запросов в README.
 
 ---
 
-## J4 · PostgreSQL + миграции + JDBC
+### J4 · PostgreSQL + миграции + JDBC
 
-### Цель
-Научиться SQL и доступу к БД **до** магии JPA (так проще понять, что делает Hibernate).
+**Сложность:** ★★★☆☆ · **Срок:** 1–2 недели
 
-### Упражнение
-1. Postgres 16 в Docker.
-2. Flyway (или Liquibase): таблица `projects`.
-3. Вариант A (рекомендуется сначала): **Spring JDBC** / `JdbcClient` / `JdbcTemplate`.
-4. Перенести projects CRUD на БД.
-5. Env: `SPRING_DATASOURCE_*`.
+#### JavaRush
 
-### Готово, когда
-- Данные переживают рестарт;
-- Миграции в git;
-- Хотя бы один SQL ты можешь объяснить построчно.
+В [Spring Data JPA](https://javarush.com/courses/spring-in-practice) блоке **сначала** возьми:
 
-### Материалы
-- [PostgreSQL Tutorial](https://www.postgresql.org/docs/current/tutorial.html)
-- [SQLBolt](https://sqlbolt.com/)
-- [Flyway](https://documentation.red-gate.com/fd/quickstart-how-flyway-works-184127599.html)
-- [Spring Data JDBC / JdbcClient](https://docs.spring.io/spring-framework/reference/data-access/jdbc.html)
-- [Docker Hub postgres](https://hub.docker.com/_/postgres)
+| Тема JR | Действие |
+|---------|----------|
+| JDBC / JPA / Hibernate / Spring Data — зачем слои | Прочитать до JPA-кода |
+| SQL refresher (таблицы, ключи, joins) | Прорешать / законспектировать |
+| SQL refresher write / indexes / transactions | То же |
+| Поднимаем PostgreSQL, DataSource, HikariCP | Повторить для FlowBoard |
+| Flyway и жизнь схемы | Миграции в нашем репо |
 
-> После J4 можно начинать JR [Spring in Practice](https://javarush.com/courses/spring-in-practice) — будет сильно легче.
+**До JR-SQL:** https://sqlbolt.com/ + [PostgreSQL Tutorial](https://www.postgresql.org/docs/current/tutorial.html)
 
----
+#### Упражнение
 
-## J5 · Spring Data JPA — CRUD Projects
+1. `docker compose` только с `postgres:16`.  
+2. Flyway: `V1__create_projects.sql`.  
+3. Переписать projects persistence на **JdbcTemplate / JdbcClient** (ещё не JPA).  
+4. Env: `SPRING_DATASOURCE_URL/USER/PASSWORD`.
 
-### Цель
-Entity, repository, связи на уровне «один пользователь — много проектов» (пока упрощённо).
+Почему JDBC до JPA: увидишь SQL, который потом спрячет Hibernate.
 
-### Упражнение
-1. `@Entity Project`, `JpaRepository`.
-2. Слой: Controller → Service → Repository.
-3. DTO ≠ Entity (маппинг вручную или MapStruct — по желанию).
-4. Не отдавать entity напрямую в JSON, если там лишние поля.
+#### DoD
 
-### Готово, когда
-- JPA CRUD projects работает;
-- Понимаешь `Lazy/Eager` хотя бы на словах;
-- Нет «Open Session in View»-сюрпризов (или осознанно настроено).
+- [ ] Данные живут после рестарта
+- [ ] Миграции в git
+- [ ] Можешь вслух разобрать `SELECT/INSERT` проекта
+- [ ] README: `docker compose up -d` + run app
 
-### Материалы
-- [Accessing Data with JPA](https://spring.io/guides/gs/accessing-data-jpa/)
-- [Spring Data JPA docs](https://docs.spring.io/spring-data/jpa/reference/)
-- JR: [Spring in Practice](https://javarush.com/courses/spring-in-practice)
+#### Отдать фронту
+
+Тот же API projects, но уже «настоящая» БД (breaking changes не нужны).
 
 ---
 
-## J6 · Spring Security + JWT
+### J5 · Spring Data JPA — Projects + подготовка Users
 
-### Цель
-Register/Login + protected routes, как в контракте.
+**Сложность:** ★★★☆☆ · **Срок:** 1–2 недели
 
-### Упражнение
-1. Entity `User` (email unique, password hash — BCrypt).
-2. `POST /auth/register`, `POST /auth/login`, `GET /auth/me`.
-3. JWT filter / resource server style (без избыточного OAuth2-зоопарка на старте).
-4. Projects только владельца.
+#### JavaRush — Spring Data JPA
 
-### Готово, когда
-- Без токена → 401;
-- Чужой project → 403/404;
-- Пароли не plaintext.
+| Тема JR | FlowBoard |
+|---------|-----------|
+| Первая entity, PK, field mapping | `ProjectEntity` |
+| Entity design / value objects | Не тащить лишнее в entity |
+| Repository abstraction | `ProjectRepository extends JpaRepository` |
+| ManyToOne / OneToMany | `User` 1—N `Project` (можно ввести User уже здесь) |
+| Derived queries, Page/Slice | `findByOwnerId(…, Pageable)` |
+| `@Transactional` как граница операции | Service-методы |
+| Flyway (уже есть) | `V2__users_and_project_owner.sql` |
+| `@DataJpaTest` | Тесты репозитория |
 
-### Материалы
-- [Spring Security Reference](https://docs.spring.io/spring-security/reference/)
-- [Baeldung: JWT with Spring Security](https://www.baeldung.com/spring-security-oauth-jwt) — выбрать простой JWT-гайд под Boot 3
-- [OWASP Password Storage](https://cheatsheetseries.owasp.org/cheatsheets/Password_Storage_Cheat_Sheet.html)
-- JR Spring in Practice · Security/JWT блоки
+Пока **можно** отдать projects без полного JWT (owner из заглушки), но схема `users` уже должна появиться.
 
----
+#### Упражнение
 
-## J7 · Tasks: фильтры и пагинация
+1. Entities + DTO mapping (ручной).  
+2. **Запрет** `@Entity` в `@RestController` return type.  
+3. Service проверяет ownership (когда появится userId).
 
-### Цель
-1:N, query params, `Pageable`.
+#### DoD
 
-### Упражнение
-По контракту: tasks CRUD + `status`, `priority`, `q`, `page`, `limit`, `sort`.  
-Индекс `(project_id, status)` в Flyway.
+- [ ] JPA CRUD projects
+- [ ] Понимаешь lazy/eager на пальцах
+- [ ] Есть `@DataJpaTest` или service-тесты с БД
 
-### Готово, когда
-- Пагинация отдаёт `items` + `meta.total`;
-- Нельзя трогать чужой project;
-- Фильтры покрыты тестами сервиса или `@DataJpaTest` / MockMvc.
+#### Отдать фронту
 
-### Материалы
-- [Pagination and sorting (Spring Data)](https://docs.spring.io/spring-data/jpa/reference/repositories/core-extensions.html#repositories.limit-query-result)
-- [JPA Specifications](https://docs.spring.io/spring-data/jpa/reference/jpa/specifications.html) — когда фильтров станет много
+Стабильный projects API; предупредить о скором включении JWT (J6).
 
 ---
 
-## J8 · Теги many-to-many
+### J6 · Spring Security + JWT (Auth)
 
-### Цель
-`@ManyToMany` / связующая таблица, фильтр `?tag=`.
+**Сложность:** ★★★★☆ · **Срок:** 2 недели
 
-### Упражнение
-Как в контракте: tags CRUD + assign/unassign + filter.  
-`UNIQUE(task_id, tag_id)`.
+#### JavaRush — Spring Security
 
-### Материалы
-- [Hibernate associations](https://docs.jboss.org/hibernate/orm/6.4/userguide/html_single/Hibernate_User_Guide.html#associations)
-- PostgreSQL UNIQUE / FK docs
+Иди по блоку Security в [Spring in Practice](https://javarush.com/courses/spring-in-practice); для FlowBoard критичны:
 
----
+| Тема JR | FlowBoard |
+|---------|-----------|
+| Зачем Security / filter chain | Общая картина |
+| PasswordEncoder | BCrypt |
+| DB-backed users, `UserDetailsService` | Таблица `users` |
+| Регистрация и жизненный цикл аккаунта | `POST /auth/register` |
+| 401 vs 403 | Как в контракте |
+| Ownership-based access | Свой / чужой project |
+| Stateless API + JWT basics | Access token |
+| Выдача JWT + login endpoint | `POST /auth/login` |
+| Custom JWT filter **или** Bearer JWT support | `Authorization: Bearer` |
+| CORS + frontend integration | Origin Vite `5173` |
+| Security MockMvc tests | Негативные кейсы |
 
-## J9 · Комментарии, ошибки, CORS
+Не увязнуть надолго в form-login/session — для SPA нужен **stateless JWT** (в курсе это отдельные уровни ближе к концу Security-блока).
 
-### Цель
-Nested comments + «удобный» API для Vue.
+#### Упражнение (контракт)
 
-### Упражнение
-1. Comments endpoints из контракта.
-2. `@ControllerAdvice` + стабильные `error.code`.
-3. CORS на `http://localhost:5173`.
-4. Validation messages понятные фронту.
-5. Не логировать password/token.
+- `POST /api/v1/auth/register`
+- `POST /api/v1/auth/login`
+- `GET /api/v1/auth/me`
+- Все projects/tasks требуют JWT
+- Чужой resource → 403 или 404 (выбрать одно, зафиксировать в README)
 
-### Материалы
-- [CORS in Spring](https://spring.io/guides/gs/rest-service-cors/)
-- [OWASP API Security Top 10](https://owasp.org/API-Security/editions/2023/en/0x11-t10/)
+#### DoD
 
----
+- [ ] Пароли не plaintext
+- [ ] Без токена → 401
+- [ ] Фронт может залогиниться и создать project
+- [ ] Секреты только в env (`JWT_SECRET`)
 
-## J10 · Тесты, Docker, деплой
+#### Материалы вне JR
 
-### Цель
-Воспроизводимый стенд и уверенный рефакторинг.
+- https://docs.spring.io/spring-security/reference/
+- https://cheatsheetseries.owasp.org/cheatsheets/Password_Storage_Cheat_Sheet.html
 
-### Упражнение
-1. Unit (service) + MockMvc (controller) + Testcontainers (Postgres).
-2. `Dockerfile` + `docker-compose` (api + db).
-3. Деплой (Railway / Render / VPS).
-4. OpenAPI: springdoc-openapi (Swagger UI).
+#### Отдать фронту
 
-### Материалы
-- [Testing in Spring Boot](https://docs.spring.io/spring-boot/reference/testing/index.html)
-- [Testcontainers](https://testcontainers.com/guides/getting-started-with-testcontainers-for-java/)
-- [springdoc-openapi](https://springdoc.org/)
-- JR: [Spring in Production](https://javarush.com/courses/spring-in-production)
+Auth готов — главная веха интеграции (§ demo в product-spec).
 
 ---
 
-## Рекомендуемый стек (фиксируем)
+### J7 · Tasks: связи, фильтры, пагинация
+
+**Сложность:** ★★★★☆ · **Срок:** 1–2 недели
+
+#### JavaRush — Data JPA (добрать)
+
+| Тема JR | FlowBoard |
+|---------|-----------|
+| ManyToOne Task→Project | Entity `Task` |
+| Derived queries / `@Query` / JPQL | Фильтры |
+| Page / Slice | `page`, `limit` → `items`+`meta.total` |
+| Specifications (pragmatic) | Динамический filter status+priority+q |
+| Индексы / SQL refresher | `(project_id, status)` |
+| join fetch / EntityGraph | Список tasks с tags (подготовка к J8) |
+
+Логика фильтров уже есть с **J1** — перенеси на БД.
+
+#### Упражнение
+
+Endpoints tasks из [api-contract.md](api-contract.md).  
+Статусы/приоритеты — enum в Java + check в БД/валидации.
+
+#### DoD
+
+- [ ] CRUD + filters + pagination
+- [ ] Нельзя писать в чужой project
+- [ ] Тест на фильтр + page
+
+#### Отдать фронту
+
+Tasks API — экран списка задач.
+
+---
+
+### J8 · Теги Many-to-Many
+
+**Сложность:** ★★★★☆ · **Срок:** ~1 неделя
+
+#### JavaRush
+
+| Тема JR (Data JPA) | FlowBoard |
+|--------------------|-----------|
+| controlled ManyToMany | `task_tags` |
+| Fetch-ловушки | Не тащить всю графу в list без нужды |
+| UNIQUE / DB constraints | `UNIQUE(task_id, tag_id)`, unique tag name per user |
+
+#### Упражнение
+
+Tags CRUD + assign/unassign + `GET tasks?tag=backend` по контракту.  
+Tags **per-user** (как в контракте).
+
+#### DoD
+
+- [ ] Несколько тегов на задаче
+- [ ] Фильтр по тегу
+- [ ] Дубликат связи невозможен
+
+#### Отдать фронту
+
+Tag chips на UI.
+
+---
+
+### J9 · Comments + ошибки + CORS polish
+
+**Сложность:** ★★★★☆ · **Срок:** ~1 неделя
+
+#### JavaRush
+
+Добить/повторить из REST & Security:
+
+- validation (вложенные структуры);
+- ProblemDetail / `@ControllerAdvice` / единый error response;
+- CORS для SPA;
+- method security / ownership для delete comment.
+
+#### Упражнение
+
+1. Comments endpoints.  
+2. Стабильные `error.code` из контракта.  
+3. CORS только на фронт-origin.  
+4. Не логировать password/token.  
+5. Сверка всех полей JSON с контрактом (чеклист).
+
+#### DoD
+
+- [ ] Demo script product-spec §8 проходит
+- [ ] Vue ходит без «костылей» CORS
+- [ ] README: Postman collection или curl-скрипт
+
+---
+
+### J10 · Тесты, Docker, деплой
+
+**Сложность:** ★★★★★ · **Срок:** 1–2 недели
+
+#### JavaRush
+
+[Spring in Production](https://javarush.com/courses/spring-in-production):
+
+| Блок | Что взять минимум |
+|------|-------------------|
+| Testing | `@WebMvcTest`, `@DataJpaTest`, Testcontainers preview |
+| Docker for Spring | Dockerfile + app+Postgres compose |
+| Hibernate Deep Dive | По желанию (N+1), если уже больно |
+
+OpenAPI: тема эволюции API / OpenAPI из REST-курса + [springdoc](https://springdoc.org/).
+
+#### Упражнение
+
+1. Unit service + MockMvc security tests + Testcontainers smoke.  
+2. `docker compose up` → API+DB.  
+3. Deploy (Railway/Render/VPS).  
+4. Swagger UI.  
+5. Совместное демо с Vue.
+
+#### DoD
+
+- [ ] `go`-аналог: `./mvnw test` зелёный
+- [ ] Compose в README
+- [ ] Staging URL у фронта работает
+- [ ] Чеклист MVP из product-spec закрыт
+
+---
+
+## 5. Рекомендуемый стек (зафиксировать в README репо)
 
 | Слой | Выбор |
 |------|--------|
-| Language | Java 21+ (или 25 под курс) |
+| Language | Java 21+ (25 — ок под курс) |
 | Framework | Spring Boot 3.x |
-| Web | Spring MVC (REST) |
+| Web | Spring MVC REST |
 | DB | PostgreSQL 16 |
-| Access | сначала JDBC, затем Spring Data JPA |
+| Access | J4: JDBC → J5+: Spring Data JPA |
 | Migrations | Flyway |
-| Security | Spring Security + JWT |
+| Security | Spring Security + JWT (stateless) |
 | Build | Maven или Gradle |
 | Docs | springdoc-openapi |
+| Tests | JUnit 5, MockMvc, Testcontainers |
 
 ---
 
-## Мини-чеклист прогресса
+## 6. Структура репозитория (целевая к J6+)
 
-- [ ] J0 Interfaces/Records + InMemory repo
-- [ ] J1 Collections domain + JUnit
-- [ ] J2 Spring Boot `/health`
-- [ ] J3 REST projects in-memory
-- [ ] J4 Postgres + Flyway + JDBC
+```text
+flowboard-api-java/
+├── src/main/java/com/flowboard/
+│   ├── FlowboardApplication.java
+│   ├── config/          # Security, CORS, OpenAPI
+│   ├── domain/          # entities
+│   ├── repository/
+│   ├── service/
+│   ├── web/             # controllers, dto, advice
+│   ├── security/        # JWT, UserDetails
+│   └── error/           # ApiException, codes
+├── src/main/resources/
+│   ├── application.yml
+│   └── db/migration/    # Flyway
+├── src/test/java/...
+├── docker-compose.yml
+├── Dockerfile
+└── README.md
+```
+
+Сверка слоёв: [product-spec.md §5](product-spec.md).
+
+---
+
+## 7. Чеклист прогресса
+
+### JavaRush
+
+- [ ] Java 25 · OOP с Interfaces → Git
+- [ ] Java 25 · Collections + Stream (+ лямбды)
+- [ ] Spring in Practice · REST & MVC (база)
+- [ ] Spring in Practice · Data JPA (база + relations + Page)
+- [ ] Spring in Practice · Security до JWT
+- [ ] Spring in Production · tests/Docker (выборочно)
+- [ ] (Опц.) Classic Java Core — интерфейсы
+
+### FlowBoard
+
+- [ ] J0 console domain + interface repo
+- [ ] J1 filters + JUnit
+- [ ] J2 `/health`
+- [ ] J3 projects in-memory REST
+- [ ] J4 JDBC + Flyway
 - [ ] J5 JPA projects
 - [ ] J6 JWT auth
 - [ ] J7 tasks + filters
 - [ ] J8 tags M2M
 - [ ] J9 comments + CORS/errors
-- [ ] J10 tests + docker + deploy
+- [ ] J10 tests + compose + deploy
 
 ---
 
-## Как совмещать с JavaRush (практический ритм)
+## 8. Ритм недели (шаблон)
 
-**Пример недели:**
+| День | Фокус |
+|------|--------|
+| Пн–Вт | 1–2 уровня JavaRush (язык или Spring) |
+| Ср | Конспект: 5–10 буллетов «как применю в FlowBoard» |
+| Чт–Пт | Код FlowBoard текущего J-модуля |
+| Сб | Тесты + README + Postman |
+| Вс | Синк с фронтом 20–30 мин / отдых |
 
-| Дни | JR | FlowBoard |
-|-----|----|-----------|
-| Пн–Ср | 1–2 уровня Java 25 | — |
-| Чт–Пт | — | упражнение текущего J-модуля |
-| Сб | короткий рефакторинг / тесты | демо себе в Postman |
-| Вс | запас / отдых | синк с фронтом 20 мин |
-
-Правило: **не начинать J5 (JPA), пока J0–J1 не закрыты** — иначе Spring будет «магией».
-
----
-
-## Частые ловушки
-
-1. Сразу Hibernate + Security + Microservice — нет, сначала J0–J4.
-2. Entity в JSON наружу — протекут поля/ленивые связи.
-3. Игнор миграций — «схема только у меня локально».
-4. Учить многопоточность вместо SQL — для FlowBoard SQL важнее раньше.
-5. Ломать [api-contract.md](api-contract.md) без версии — ломает Vue.
+**Стоп-правило:** не начинать J5, пока J0–J1 не закрыты. Не начинать J6, пока projects стабильно на БД (J4/J5).
 
 ---
 
-## С чего начать ему сегодня
+## 9. Частые ловушки
 
-1. Добить JR урок **Interfaces** и следующий (functional interfaces).
-2. Сделать упражнение **J0** (record + interface repository).
-3. Прочитать [api-contract.md](api-contract.md) вместе с фронтом.
-4. Когда дойдёт до Collections — сразу **J1**.
+1. Копировать Task Tracker из JR один-в-один — будет другой API, фронт отвалится.  
+2. Прыгнуть в JPA/Security без Collections и SQL refresher.  
+3. Отдавать `@Entity` в JSON.  
+4. `CORS *` + CSRF-путанца на stateless API.  
+5. Секреты в git.  
+6. Ломать контракт без `v0.2`.  
+7. Учить Virtual Threads раньше, чем CRUD+JWT.
+
+---
+
+## 10. С чего начать сегодня
+
+1. JR Java 25: добить **Интерфейсы** → сразу следующий урок (**продвинутые интерфейсы**).  
+2. Создать GitHub `flowboard-api-java` (пустой README ок).  
+3. Прочитать [product-spec.md](product-spec.md) §1–5 и [api-contract.md](api-contract.md).  
+4. Сделать упражнение **J0** (record + `TaskRepository`).  
+5. Написать фронту: «J0 в работе, health ожидайте после старта Spring (J2)».
+
+---
+
+## 11. Полезные ссылки одной пачкой
+
+**JavaRush**
+
+- https://javarush.com/courses/java25  
+- https://javarush.com/courses/java  
+- https://javarush.com/courses/spring-in-practice  
+- https://javarush.com/courses/spring-in-production  
+
+**Официальные / практика**
+
+- https://docs.oracle.com/javase/tutorial/java/IandI/createinterface.html  
+- https://sqlbolt.com/  
+- https://spring.io/guides  
+- https://docs.spring.io/spring-boot/reference/  
+- https://documentation.red-gate.com/fd/quickstart-how-flyway-works-184127599.html  
+- https://testcontainers.com/guides/getting-started-with-testcontainers-for-java/  
+- https://springdoc.org/  
+
+Удачи. Цель — не «пройти JR на 100% уровней», а **законченный FlowBoard API**, который стыкуется с Vue и объясняется своими словами.
