@@ -28,6 +28,8 @@
 - Все примеры писать сразу на `TypeScript`.
 - Для каждого модуля фиксировать критерии завершения: что именно должно быть реализовано, проверено и объяснимо своими словами.
 - Дополнительно: [статьи и видео](docs/RESOURCES.md), [playgrounds и демо](docs/DEMOS.md), [cheatsheet](docs/CHEATSHEET.md).
+- Расписание в SingularityApp: [docs/SINGULARITY-SCHEDULE.md](docs/SINGULARITY-SCHEDULE.md). Импорт CSV: [docs/singularity-import.fixed.csv](docs/singularity-import.fixed.csv) (если `singularity-import.csv` открыт — закройте и переименуйте). MAX-бот: [docs/singularity-max-batch.txt](docs/singularity-max-batch.txt).
+- Совместный fullstack (Vue + Go **или** Java backend): [FlowBoard](docs/collab-flowboard/README.md).
 
 ## Как понимать, что модуль завершен
 
